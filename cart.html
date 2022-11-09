@@ -5,8 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart page</title>
+<link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    
+    <div id="navbar"></div>
+    <div id="location">
+        <div>
+            <img src="https://online.kfc.co.in/static/media/GoogleMapLocation.c86d640b.svg" alt="">
+        </div>
+        
+        <h3>Pick up from: KFC Agra New</h3>
+        <div>
+            <img src="https://online.kfc.co.in/static/media/clock.264bac4c.svg" alt="">
+        </div>
+        
+        <h3>ASAP</h3>
+        <button id="change">Change</button>
+    </div>
+    <div id="linelogo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==" alt=""></div>
+    <div id="heading"><h1>MY CART</h1></div>
+    <div id="container">
+        <div id="box"></div>
+        <div id="bill"></div>
+    </div>
+    <div id="popular_add_on">
+        <h1 id="pop_heading"></h1>
+        <div id="add_on">
+            
+        </div>
+    </div>
+    <div id="emptycart">
+        <div>
+            <div><h1>YOUR CART IS EMPTY.</h1>
+                <h1>LET'S START AN ORDER!</h1>
+                <div ><button id="start_order">Start Order</button></div></div>
+        </div>
+        
+        <div> <img src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png" alt=""></div>
+       
+    </div>
+    <div id="lovethese">
+        <h1>WE THINK YOU'LL LOVE THESE</h1>
+        <div id="lovecard">
+            <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K223.jpg?ver=21.87" alt="">
+            <div>
+                <h3>Large Popcorn</h3>
+                <h3>&#8377 180</h3>
+            </div>
+            <div>
+                <img src="https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg" alt="">
+                <p>Non veg • Serves 4</p>
+            </div>
+            <p>Bite sized boneless pieces of Hot & Crispy with special spices</p>
+           
+            <button id="add_to_cart">Add to Cart <img src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg" alt=""></button>
+        </div>
+    </div>
+    <div id="faq">
+        <div id="lhs">
+            <div>
+                <h1>FAQ</h1>
+            </div>
+            <div><p>How can I change the information for my credit/debit card or select a different default payment method?</p></div>
+            <div><p>What to expect for delivery?</p></div>
+            <div><p>How do I change or cancel my pickup order once I’ve placed my order?</p></div>
+           <button id="view_all_faq">View All FAQs</button>
+        </div>
+        <div id="rhs">
+            <div><h1>STILL HAVE A QUESTION?</h1>
+            </div>
+            <div>
+                <div><button id="call_us" ><img src="https://online.kfc.co.in/static/media/Call_Icon.95900156.svg" alt="">Call Us</button></div>
+                <div><button id="contact_us"><img src="https://online.kfc.co.in/static/media/Mail_Icon.3eaa02d7.svg" alt="">Contact Us</button></div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
 </body>
 </html>
+
+<script type="module" src="cart.js"></script>
