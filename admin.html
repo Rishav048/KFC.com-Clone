@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC Admin Dashboard</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div id="welcome">
+      <h1>Welcome to KFC admin dashboard !</h1>
+    </div>
+
+    <div id="add_info">
+      <h2>Add New Products</h2>
+      <form>
+        <input type="number" placeholder="Enter id" id="id" />
+        <input type="url" placeholder="Enter Url" id="image" />
+        <input type="text" placeholder="Enter Name" id="name" />
+        <input type="text" placeholder="Enter Veg/Non-Veg" id="v/nv" />
+        <input type="text" placeholder="Enter Serves" id="serves" />
+        <input type="price" placeholder="Enter Price" id="price" />
+        <input type="text" placeholder="Description" id="description" />
+        <button id="add_items">Add Products</button>
+      </form>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="admin.js"></script>
