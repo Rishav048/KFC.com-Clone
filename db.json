@@ -6,7 +6,7 @@
       "name": "Kings Fried Chicken",
       "vegORnonveg": "Non-Veg",
       "serves": "serves 2-3",
-      "price": 1200,
+      "price": "1200",
       "description": "Kings Favourite-Lipsmacking and tangy"
     },
     {
@@ -402,9 +402,7 @@
       "description": "Mirinda Can 330 ml"
     }
   ],
-  "cart":[
-    {
-      
-    }
+  "cart": [
+    {}
   ]
 }
