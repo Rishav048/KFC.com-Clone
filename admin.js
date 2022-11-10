@@ -51,7 +51,7 @@ const addProducts = async() => {
 
 
  });
- let data=await res.json();
+ let data = await res.json();
  console.log('data:', data);
 
 

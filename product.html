@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="/product.css">
+    <link rel="stylesheet" href="/Styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
    
 </head>
 <body>
-    <div id="navbar">
-        
+    <div id="Navbar">
+        <!-- appending navbar here -->
     </div>
 
+    <div id="startDiv">
+         <!-- appending startOrder here-->
+    </div>
 
-    
+    <!-- <h1 id="price">PRICE</h1>
+    <h1 id="ContItems">0</h1> -->
+    <div id="loader_div"><img src="https://online.kfc.co.in/KFC_Loader_Gif.gif" alt="LOADING..."></div>
+
     <div id="container">
+       
         <div id="menu">
        <img id="menuimg" src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg" alt="">
        <h1 id="menuHeading">KFC MENU</h1>
@@ -24,19 +33,21 @@
        <h3><a href="#NEW_LAUNCH">NEW LAUNCH</a></h3>
        <h3><a href="#BIRYANI_BUCKETS">BIRYANI BUCKETS</a></h3>
        <h3><a href="#BOX_MEALS">BOX MEALS</a></h3>
-       <h3><a href="#BURGERS">BURGERS</a></h3>
-      <h3><a href="#SNACKS">SNACKS</a></h3>
+       <h3><a href="#BURGERS" >BURGERS</a></h3>
+      <h3><a href="#SNACKS" >SNACKS</a></h3>
        <h3><a href="#STAY_HOME_SPECIALS">STAY HOME SPECIALS</a></h3>
        <h3> <a href="#BEVERAGES">BEVERAGES</a></h3>
 
         </div>
         <div id="categories">
             <div id="search_div">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search our menu">
+                <i class="fa-solid fa-magnifying-glass" id="tap"></i>
+                <input type="text" placeholder="Search our menu" id="search">
             </div>
+            <div id="ContItems">0</div>
+        
             <hr id="line">
-            <h2>CHICKEN BUCKETS</h2>
+            <h2 id="changetext">CHICKEN BUCKETS</h2>
             <div class="section_divs" id="CHICKEN_BUCKETS"></div>
             <h2>NEW LAUNCH</h2>
             <div class="section_divs" id="NEW_LAUNCH"></div>
