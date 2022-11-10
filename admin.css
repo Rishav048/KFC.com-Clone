@@ -1,6 +1,57 @@
-/* #add_info {
-  width: 800px;
-  height: 500px;
-  border: 1px solid black;
-  display: block;
-} */
+#add_info {
+  /* background-image: url(https://www.shutterstock.com/image-vector/crispy-fried-chicken-seamless-pattern-600w-1502792384.jpg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border: 1px solid rgb(179, 121, 121);
+  /* background-color: rgb(209, 52, 52); */
+}
+
+input {
+  width: 350px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  /* border: none; */
+  border-radius: 30px;
+}
+::placeholder {
+  color: rgb(89, 76, 76);
+}
+button {
+  color: red;
+  width: 350px;
+  height: 40px;
+  font-weight: bold;
+  border: 1px solid grey;
+  background-color: rgb(247, 241, 241);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px;
+}
+
+#welcome {
+  background-color: rgb(249, 243, 243);
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {
+    background-color: rgb(249, 243, 243);
+  }
+  to {
+    background-color: yellow;
+  }
+}
+#add_them {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
