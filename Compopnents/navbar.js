@@ -28,4 +28,4 @@ function startDiv(){
 
 }
 
-export {navbar,startDiv}
+export {navbar,startDiv};
