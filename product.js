@@ -1,3 +1,13 @@
+let nav = document.getElementById("Navbar");
+let strtdiv = document.getElementById("startDiv");
+
+import{navbar,startDiv} from "./Compopnents/navbar.js";
+nav.innerHTML = navbar();
+strtdiv.innerHTML = startDiv();
+
+
+// require('events').EventEmitter.prototype._maxListeners = 100;
+
 //Catching all the divs;
 
 let CHICKEN_BUCKETS = document.querySelector("#CHICKEN_BUCKETS");
@@ -9,6 +19,12 @@ let SNACKS = document.querySelector("#SNACKS");
 let STAY_HOME_SPECIALS = document.querySelector("#STAY_HOME_SPECIALS");
 let BEVERAGES = document.querySelector("#BEVERAGES");
 
+//   Catching Loader div and setting it for 3 second 
+let loader = document.getElementById("loader_div");  
+setTimeout(()=>{
+  loader.style.display = "none";
+},3200)
+//**************************************************//
 
 
 let valueINlink = ["CHICKEN_BUCKETS","NEW_LAUNCH","BIRYANI_BUCKETS","BOX_MEALS","BURGERS","SNACKS","STAY_HOME_SPECIALS","BEVERAGES"];
@@ -50,6 +66,7 @@ const getData = async () =>{
       }
       else if(valueINlink[i] == "BEVERAGES"){
        appendData(data,BEVERAGES)
+       
       }
       
     }
@@ -61,7 +78,9 @@ getData();
 }
 
 
+
 const appendData = (data,container) =>{
+    
     container.innerHTML = null;
     data.forEach((el)=>{
      let card = document.createElement("div");
@@ -102,6 +121,9 @@ const appendData = (data,container) =>{
      let addbtn = document.createElement("button");
      addbtn.setAttribute("class","add_to_cart");
      addbtn.innerHTML =`Add to Cart`;
+     addbtn.addEventListener("click",() =>{
+              addToCart(el);
+     })
      addbtn.append(btnimg)
      let btndiv = document.createElement("div");
      btndiv.setAttribute("class","btndiv");
@@ -112,4 +134,99 @@ const appendData = (data,container) =>{
      container.append(card)
 
     })
+}
+
+
+// ************** ADD TO CART *****************
+
+//Storing and geting the Price and itemscount of the cart
+let productCount = localStorage.getItem("count") || 0;
+let totalprice = +(localStorage.getItem("addedprice") || 0);
+
+//This is for appending the price
+let priceupdate = document.getElementById("wallet");
+priceupdate.innerHTML = totalprice;
+
+//This is for appending the itemcount
+let itemcount = document.getElementById("ContItems");
+itemcount.innerHTML = productCount;
+
+
+const addToCart = async (el) =>{
+    el.id = null;
+   try{
+   let response  = await fetch(`http://localhost:3000/cart`,{
+    method:"POST",
+    body:JSON.stringify(el),
+    headers:{
+      "content-type" : "application/json"
+    },
+   });
+
+   let data = await response.json();
+   console.log(data);
+   productCount++;
+   localStorage.setItem("count",productCount);
+   let amount = totalprice + (+el.price)
+   localStorage.setItem("addedprice",amount)
+   }
+   catch(e){
+    console.log(e)
+   }
+}
+
+//Seach funtonallity (It will search according to value in all array and the rest divs will be null);
+// let valueINlink = ["CHICKEN_BUCKETS","NEW_LAUNCH","BIRYANI_BUCKETS","BOX_MEALS","BURGERS","SNACKS","STAY_HOME_SPECIALS","BEVERAGES"];
+let Searcharr = [];
+for(let i=0; i<8; i++){ 
+const searchitems = async() =>{
+  try{
+    let value = document.getElementById("search").value;
+  // console.log(value)
+  let res = await fetch(`http://localhost:3000/${valueINlink[i]}?q=${value}`);
+  let data = await res.json();
+  
+  if(data.length !== 0){
+   // console.log("data",data);
+    for(let j=0; j<data.length; j++){
+      Searcharr.push(data[j]);
+    }
+    
+  }
+  let newtext = document.getElementById("changetext");  //Catching the h tag which text should be changed on search
+  if(i==7 && Searcharr.length == 0){
+    // console.log(Searcharr.length)
+    CHICKEN_BUCKETS.innerHTML = null;
+    newtext.innerHTML ="<img src=\'https://pbs.twimg.com/media/DDPKLHNVwAA87D5.jpg' width=\'100%\' height=\'380px\'>";
+    setTimeout(()=>{
+      newtext.innerHTML = "Returning to menu..╰┈➤╰┈➤╰┈➤╰┈➤";
+      newtext.style.fontSize = "30px";
+      newtext.style.color = "red";
+
+               setTimeout(()=>{
+                 window.location.reload();
+                 },2000)
+    },2000)
+
+  }
+  else if(i==7 && Searcharr.length !== 0){
+     //console.log(Searcharr)
+     newtext.innerHTML =`Total "${Searcharr.length}" results found for "${value}"`
+     newtext.style.fontSize = "30px";
+     newtext.style.color = "red";
+    appendData(Searcharr,CHICKEN_BUCKETS);
+  }
+  
+ 
+ 
+  }
+  catch(e){
+    console.log(e);
+  }
+}
+
+let searchicon = document.getElementById("tap");
+searchicon.addEventListener("click",()=>{
+  searchitems()
+})
 }

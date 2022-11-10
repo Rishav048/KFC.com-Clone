@@ -402,9 +402,249 @@
       "description": "Mirinda Can 330 ml"
     }
   ],
-  "cart":[
+  "cart": [
     {
-      
+      "id": 1,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 2,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002160.jpg?ver=21.87",
+      "name": "Wednesday Strips Bucket",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "1000",
+      "description": "Flat 55% off on 12 pc chicken strips served with 4 delicious dips"
+    },
+    {
+      "id": 3,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 4,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002160.jpg?ver=21.87",
+      "name": "Wednesday Strips Bucket",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "1000",
+      "description": "Flat 55% off on 12 pc chicken strips served with 4 delicious dips"
+    },
+    {
+      "id": 5,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 6,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002160.jpg?ver=21.87",
+      "name": "Wednesday Strips Bucket",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "1000",
+      "description": "Flat 55% off on 12 pc chicken strips served with 4 delicious dips"
+    },
+    {
+      "id": 7,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002153.jpg?ver=21.87",
+      "name": "Peri Peri 10 Strips with Dynamite",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "700",
+      "description": "10 Spicy Peri Peri chicken strips & our Dynamite Spicy Mayo Sauce Bottle"
+    },
+    {
+      "id": 8,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 9,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 10,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 11,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002154.jpg?ver=21.87",
+      "name": "Peri Peri 10 Strips with Nashville",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2",
+      "price": "650",
+      "description": "10 Spicy Peri Peri chicken strips & our Nashville Hot Sauce Bottle"
+    },
+    {
+      "id": 12,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002155.jpg?ver=21.87",
+      "name": "Peri Peri 10 Leg pc & 4 Dips",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 4",
+      "price": "900",
+      "description": "Leg before any wicket! Save 27% on 10 Spicy Peri Peri Leg Pieces & 4 Dips"
+    },
+    {
+      "id": 13,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002156.jpg?ver=21.87",
+      "name": "Peri Peri 5 Leg Pc Meal",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves-2",
+      "price": "550",
+      "description": "5 Spicy Peri Peri Leg Pieces, 2 Dips, 1 Med Fries & a Pepsi PET"
+    },
+    {
+      "id": 14,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K710.jpg?ver=21.87",
+      "name": "Chicken Popcorn Maggi Bowl",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 1",
+      "price": 180,
+      "description": "Match made in KFC - crunchy Chicken Popcorn with a bowl of hot & delicious Maggi"
+    },
+    {
+      "id": 15,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002153.jpg?ver=21.87",
+      "name": "Peri Peri 10 Strips with Dynamite",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "770",
+      "description": "10 Spicy Peri Peri chicken strips & our Dynamite Spicy Mayo Sauce Bottle"
+    },
+    {
+      "id": 16,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 17,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 18,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 19,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002160.jpg?ver=21.87",
+      "name": "Wednesday Strips Bucket",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "1000",
+      "description": "Flat 55% off on 12 pc chicken strips served with 4 delicious dips"
+    },
+    {
+      "id": 20,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 21,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002155.jpg?ver=21.87",
+      "name": "Peri Peri 10 Leg pc & 4 Dips",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 4",
+      "price": "900",
+      "description": "Leg before any wicket! Save 27% on 10 Spicy Peri Peri Leg Pieces & 4 Dips"
+    },
+    {
+      "id": 22,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002167.jpg?ver=21.87",
+      "name": "All Chicken Box",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 1",
+      "price": 190,
+      "description": "A Box with your favorites! Get 1 pc Hot & Crispy, 2 Hot Wings & 1 Chicken Strip at a deal price"
+    },
+    {
+      "id": 23,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 24,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K710.jpg?ver=21.87",
+      "name": "Chicken Popcorn Maggi Bowl",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 1",
+      "price": 180,
+      "description": "Match made in KFC - crunchy Chicken Popcorn with a bowl of hot & delicious Maggi"
+    },
+    {
+      "id": 25,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 26,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
+      "name": "Kings Fried Chicken",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": 1200,
+      "description": "Kings Favourite-Lipsmacking and tangy"
+    },
+    {
+      "id": 27,
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002160.jpg?ver=21.87",
+      "name": "Wednesday Strips Bucket",
+      "vegORnonveg": "Non-Veg",
+      "serves": "serves 2-3",
+      "price": "1000",
+      "description": "Flat 55% off on 12 pc chicken strips served with 4 delicious dips"
     }
   ]
 }

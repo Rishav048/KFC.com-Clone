@@ -1,9 +1,14 @@
 
 html{
     scroll-behavior: smooth;
+
+    
+    scroll-margin-top: 200px;
+        
+    
+
+
 }
-
-
 
 
 #container{
@@ -42,8 +47,9 @@ html{
 }
 #menuHeading{
    font-family:fantasy;
-   font-weight: 80;
+   font-weight: 60;
    letter-spacing: 2.2px;
+  
 }
 #menu>h3{
     font-family: "Source Sans Pro", "Arial", sans-serif;
@@ -129,15 +135,6 @@ h2{
    letter-spacing: 0.7px;
    margin-top: 15px;
    
-}
-#navbar{
-    width: 100%;
-    height: 60px;
-    background-color: aqua;
-   top:0;
-   bottom:0;
-   z-index: 99;
-   position: sticky;
 }
 /* ************* Style For each Card*************** */
 .cardImg{
@@ -225,6 +222,29 @@ h2{
     align-items: center;
 }
 
+/* ***************lOADER************ */
 
+#loader_div{
+        position:fixed;
+        top:10%;
+        left:30%;
+        border:0px solid green;
+        width:100%;
+        height:100%;
+        justify-content: center;
+        align-items: center;
 
+}
 
+#loader_div>img{
+    width:550px;
+    height: 550px;
+}
+
+#ContItems{
+    margin-right: 30px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #e4002b;
+}
