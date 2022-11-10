@@ -2,13 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
-#fixed{
-    height: 70px;
-    width: 100%;
-    border: 1px solid rgb(50, 236, 81);
-   position: fixed;
-   background-color: aqua;
-}
+
+
+
 
 #container{
    
@@ -26,6 +22,7 @@ html{
     height: 600px;
     text-align: left;
     position: fixed;
+    background-color: #ffffff;
     
 }
 
@@ -33,6 +30,9 @@ html{
     margin-left: 28.3%;
     width: 71%;
     border: 1px solid greenyellow;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f7f5;
 
 }
 
@@ -94,15 +94,137 @@ html{
 
 .section_divs{
     border:0px solid rgb(0, 255, 242);
-    height: 500px;
+    height: auto;
     width: 100%;
     padding-top: -50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
-.section_divs>h2{
+#CHICKEN_BUCKETS{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+#CHICKEN_BUCKETS>div>div:nth-child(5){
+    width: 100%;
+    border:0px solid blue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.section_divs div{
+    border:none;
+}
+
+h2{
     color: rgb(33, 37, 41);
     font-family:fantasy;
    font-weight: 50;
    letter-spacing: 0.7px;
    margin-top: 15px;
+   
 }
+#navbar{
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+   top:0;
+   bottom:0;
+   z-index: 99;
+   position: sticky;
+}
+/* ************* Style For each Card*************** */
+.cardImg{
+    width:100%;
+    height: 260px;
+    border-radius: 4px;
+}
+
+.section_divs>div{
+    border:0px solid green;
+    height: 465px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px 0px; 
+   
+}
+
+.icondiv{
+    border: 1px solid yellow;
+    display: flex;
+    gap:3px;
+    height: auto;
+    margin-top: -13px;
+}
+
+.Cardname{
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight:600;
+    color: #202124;
+    line-height: 11px; 
+}
+
+.icondiv>p{
+    font-family: system-ui;
+    font-size: 12px;
+    font-weight:400;
+    color: #494949;
+    line-height: 16px; 
+   
+}
+
+.Cardprice{
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight:600;
+    color:#202124;
+    line-height: 7px; 
+}
+
+.Carddescription{
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight:400;
+    color:#494949;
+    line-height: 14px; 
+}
+
+.add_to_cart{
+    margin-top: auto;
+    width: 180px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 24px;
+    background-color: #e4002b;
+    border-radius: 200px;
+    border:none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    
+}
+
+.content_div{
+    border:1px solid red;
+    height: 80px;
+    margin-top: -13px;
+}
+.btndiv{
+    width: 100%;
+    border:1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
