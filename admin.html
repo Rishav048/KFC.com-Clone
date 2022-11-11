@@ -19,22 +19,60 @@
     <div id="welcome">
       <h1>Welcome to KFC admin dashboard !</h1>
     </div>
+    <div id="crud">
+      <div id="add_info">
+        <div id="add_them">
+          <h2>Add New Products</h2>
+        </div>
+        <div id="formed">
+          <form>
+            <input type="number" placeholder="Enter id" id="id" />
+            <input type="url" placeholder="Enter Url" id="image" />
+            <input type="text" placeholder="Enter Name" id="name" />
+            <input type="text" placeholder="Enter Veg/Non-Veg" id="v/nv" />
+            <input type="text" placeholder="Enter Serves" id="serves" />
+            <input type="price" placeholder="Enter Price" id="price" />
+            <input type="text" placeholder="Description" id="description" />
+            <button id="add_items">Add Products</button>
+          </form>
+        </div>
+      </div>
 
-    <div id="add_them">
-      <h2>Add New Products</h2>
-    </div>
+      <div id="update">
+        <div id="update_them">
+          <h2>Update Products</h2>
+        </div>
+        <div id="update_form">
+          <form>
+            <input type="number" placeholder="Enter id" id="update_id" />
+            <input type="url" placeholder="Enter Url" id="update_image" />
+            <input type="text" placeholder="Enter Name" id="update_name" />
+            <input
+              type="text"
+              placeholder="Enter Veg/Non-Veg"
+              id="update_v/nv"
+            />
+            <input type="text" placeholder="Enter Serves" id="update_serves" />
+            <input type="price" placeholder="Enter Price" id="update_price" />
+            <input
+              type="text"
+              placeholder="Description"
+              id="update_description"
+            />
+            <button id="update_items">Update Products</button>
+          </form>
+        </div>
+      </div>
 
-    <div id="add_info">
-      <form>
-        <input type="number" placeholder="Enter id" id="id" />
-        <input type="url" placeholder="Enter Url" id="image" />
-        <input type="text" placeholder="Enter Name" id="name" />
-        <input type="text" placeholder="Enter Veg/Non-Veg" id="v/nv" />
-        <input type="text" placeholder="Enter Serves" id="serves" />
-        <input type="price" placeholder="Enter Price" id="price" />
-        <input type="text" placeholder="Description" id="description" />
-        <button id="add_items">Add Products</button>
-      </form>
+      <div id="delete_item">
+        <div id="delete_them">Delete Products</div>
+        <div id="delete_form">
+          <form>
+            <input type="number" placeholder="Enter id" id="id_delete" />
+            <button id="delete_id_button">Delete Product</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <div id="footer"></div>
