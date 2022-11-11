@@ -13,8 +13,9 @@ function navbar (){
         <i class="fa-regular fa-circle-user fa-2x"></i>
         <h4>Sign In</h4>
         <p>|</p>
-        <h4 id="wallet">₹ <span>0</span></h4>
+        <h4 >₹ <span id="wallet">0</span></h4>
         <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt="cartImg">
+        <h5 id="noi"></h5>
     </div>
 
 </div>`
