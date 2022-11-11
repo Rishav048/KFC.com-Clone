@@ -304,15 +304,137 @@
     width: 85%;
     margin: auto;
     height: 700px;
-    border: 1px solid red;
+    
     margin-top: 60px;
     justify-content: space-between;
 }
 #box{
-    width: 73%;
-    border: 1px solid black;
+    width: 70%;
+   
 }
 #bill{
-    width: 24%;
-    border: 1px solid black
+    width: 26%;
+    
+
 }
+
+#bill>div{
+    height: 620px;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+#bill>div>div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+    
+}
+#donate{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#checkout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    background-color: #e4002b;
+    color: #ffffff;
+}
+#checkout:hover{
+   background-color: #e32b4d;
+    cursor: pointer;
+}
+
+#view_all{
+    padding: 5px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #ffffff;
+   border: 1px solid black;
+   margin-right: 15px;
+  
+}
+#view_all:hover{
+    background-color: #202124;
+    color: #ffffff;
+    cursor: pointer;
+}
+#bill>div>div:nth-child(2)>img{
+    margin-left: 15px;
+}
+#bill>div>div:nth-child(2){
+
+   background-color: #f8f7f5 ; 
+   height: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #e4002b;
+   font-size: 14px;
+   font-weight: 700;
+
+}
+#bill>div>div:nth-child(7){
+    height: 60px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+#bill>div>div:nth-child(7)>p{
+    margin-right: 3px;
+}
+#carry_bag{
+    margin-left: 15px;
+}
+#bill>div>div:nth-child(8){
+    height: 120px;
+    border: 1px solid #e3e3e3;
+}
+
+#add_more_menu{
+    
+        padding: 10px 35px;
+        border-radius: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #ffffff;
+       
+    }
+    #add_more_menu:hover{
+        background-color: #202124;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    #remove_all{
+        border: 0px;
+        background-color: #ffffff;
+       text-decoration: underline;
+       
+    }
+    #remove_all:hover{
+        background-color: #e3e3e3;
+        cursor: pointer;
+
+    }
+
+   #box_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+   }
+   #box>div{
+    margin-bottom: 10px;
+   }
