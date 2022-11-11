@@ -4,104 +4,6 @@
     bottom: 0;
 }
 
-
-#fixed{
-  font-family: "National 2 Regular Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  height: 32px;
-  display: flex;
-  padding:1% ;
-  color: #202124;
-  background-color: #f6f3f0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5%;
-  border-bottom: 1px solid rgb(157, 159, 161);
-}
-
-#fixed button{
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-#Navbar{
-    width:100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #f6f3f0;
-    top:0;
-    bottom: 0;
-    position: sticky;
-    z-index: 99;
-    cursor: pointer;
-}
-
-#mainNav{
-    display: flex;
-    justify-content: space-between;
-    width:95%;
-    font-size: 18px;
-}
-
-#mainNav .navLeft{
-    display: flex;
-    margin-left: -8%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap:8%;
-    font-size: 25px;
-}
-
-#mainNav .navRight{
-    margin-right: -5%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap:2%;
-}
-
-.navRight>img{
-   width:20%;
-}
-
-.logo{
-    width:35% ;
-    border-radius: 25px;
-    margin-right: -60%;
-}
-
-#startDiv{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    width:100%;
-    justify-content: center;
-    text-align: center;
-    background-color: black;
-    color: white;
-    align-items: center;
-}
-
-#startDiv>.startBtn{
-    padding: 1%;
-    color: white;
-    background-color: #e4002b;
-    border-radius: 5%;
-    padding: 11px 40px;
-    border-radius: 200px;
-    height: 44px;
-    cursor: pointer;
-    margin-left: 2%;
-
-}
-
 #welcome{
     margin-top: -20px;
     /* display: flex; */
@@ -136,10 +38,6 @@
     margin-top: 100px;
     margin-bottom: 7%;
   margin-left: 2%;
-}
-
-#navRightCorner{
-    width:35%;
 }
 
 .showThis{
@@ -222,13 +120,6 @@ html{
 }
 
 
-@media all and (min-width:350px) and (max-width:700px){
-    #mainNav{
-        flex-direction: column;
-    }
-}
-
-
 
 #carosel_inner{
      display: flex;
@@ -246,4 +137,51 @@ html{
 #catMenu>div:hover{
 background-color: rgb(207, 245, 232);
 box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#offerDeals{
+
+    background-color: black;
+    color: rgb(23, 23, 23);
+    margin-top: 25px;
+    padding: 20px;
+
+}
+
+#offerDeals>h3{
+   color: rgb(254, 253, 253);
+}
+
+#dealsCard{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#dealsCard div{
+    background-color: white;
+}
+
+#dealsCard img{
+    width:100%;
+}
+
+#dealsCard .btnsDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+#dealsCard .btnsDiv>button{
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 200px;
+    background-color: white;
+    padding: 10%;
+}
+
+#dealsCard .btnsDiv>button:hover{
+    background-color: rgb(18, 18, 18);
+    color: white;
 }
