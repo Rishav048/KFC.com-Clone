@@ -1,65 +1,188 @@
-#Navbar{
-    width:100%;
-    background-color: #f6f3f0;
-    top:0;
+*{
+    margin: 0;
+    top: 0;
     bottom: 0;
-    position: sticky;
-    z-index: 99;
 }
 
-#mainNav{
+#welcome{
+    margin-top: -20px;
+    /* display: flex; */
+    background-color: #f8f7f5;
+    justify-content: left;
+    text-align: left;
+    padding: 1%;
+    padding-left: 15%;
+    font-size: 22px;
+}
+
+#carosel img{
+    width:100%;
+    position: relative;
+    cursor: pointer;
+}
+#menuimg{
+    width:3%;
+}
+
+#horizontaLine{
+    border-bottom: 1px solid #474748;
+    width:60%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-family: "National 2 Condensed";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 7%;
+  margin-left: 2%;
+}
+
+.showThis{
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+#categories{
+    
+  margin-top: 2%;
+  display: flex;
+  margin-left: 10%;
+  margin-top: -20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+#catMenu{
+    display: grid;
+    width:80%;
+    gap:2.5%;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    margin-left: 18%;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+#catMenu div{
+    background-color: #eae9e7;
+    border-radius: 1.5%;
+    height: 300px;
+}
+
+#catMenu img{
+    width:100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+#catMenu h4{
+    padding-top: 10%;
+}
+
+#catMenu div:nth-child(8) h4{
+    padding-top: 20%;
+    font-weight: 250;
+}
+
+#catMenu div:nth-child(8) img{
+    margin-top: 25%;
+    width:65%;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.goToCat{
+    cursor: pointer;
+}
+
+
+/* Page Responsive ness of Navbar and Categories */
+
+@media all and (min-width:570px) and (max-width:990px){
+    #catMenu{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (min-width:350px) and (max-width:570px){
+    #catMenu{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+#carosel_inner{
+     display: flex;
+    flex-direction: column;
+    /* position: absolute;  */
+    transform: translate(0, 0, 0);
+    transform: 1000ms;
+}
+#carosel{
+    overflow: hidden;
+    position: relative;
+}
+
+
+#catMenu>div:hover{
+background-color: rgb(207, 245, 232);
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#offerDeals{
+
+    background-color: black;
+    color: rgb(23, 23, 23);
+    margin-top: 25px;
+    padding: 20px;
+
+}
+
+#offerDeals>h3{
+   color: rgb(254, 253, 253);
+}
+
+#dealsCard{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#dealsCard div{
+    background-color: white;
+}
+
+#dealsCard img{
+    width:100%;
+}
+
+#dealsCard .btnsDiv{
     display: flex;
     justify-content: space-between;
-    width:95%;
-    font-size: 18px;
-}
-
-#mainNav .navLeft{
-    display: flex;
-    margin-left: -8%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap:8%;
-    font-size: 25px;
-}
-
-#mainNav .navRight{
-    margin-right: -5%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap:5%;
-}
-
-.navRight>img{
-   width:15%;
-}
-
-.logo{
-    width:30% ;
-    border-radius: 25px;
-    margin-right: -60%;
-}
-
-#startDiv{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: black;
-    color: white;
+    padding: 3%;
     align-items: center;
 }
 
-#startDiv>.startBtn{
-    padding: 1%;
-    color: white;
-    background-color: #e4002b;
-    border-radius: 5%;
-    padding: 11px 40px;
+#dealsCard .btnsDiv>button{
+    border: 1px solid rgb(11, 11, 11);
     border-radius: 200px;
-    height: 44px;
-    cursor: pointer;
-    margin-left: 2%;
+    background-color: white;
+    padding: 5%;
+}
+
+#dealsCard .btnsDiv>button:hover{
+    background-color: rgb(18, 18, 18);
+    color: white;
 }

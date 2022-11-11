@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to Kings Fried Chicken</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div id="write_login_signup">
+      <h4>SignUp/Login</h4>
+    </div>
+    <div id="kfc_image_link">
+      <a href="./index.html"
+        ><img
+          src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2022_08_04/images/KFC_logo.svg"
+      /></a>
+    </div>
+    <div id="welcome_text">
+      <h3>LET'S SIGN IN OR CREATE ACCOUNT WITH YOUR DETAILS</h3>
+    </div>
+
+    <div id="container_login">
+      <div id="register_form">
+        <form>
+          <input type="text" id="name" placeholder="Enter Name" />
+          <input type="email" id="email" placeholder="Enter Email" />
+          <input type="password" id="password" placeholder="Enter Password" />
+          <input type="text" id="username" placeholder="Username" />
+          <input type="number" id="mobile" placeholder="Enter Number" />
+          <input type="text" id="description" placeholder="Description" />
+          <button onclick="Register(event)" id="register_button">
+            User Sign Up
+          </button>
+        </form>
+      </div>
+      <div id="login_form">
+        <form>
+          <input type="text" id="login_username" placeholder="Username" />
+          <input
+            type="password"
+            id="login_password"
+            placeholder="Enter Password"
+          />
+          <button onclick="login()" id="user_login_btn">User Login</button>
+        </form>
+      </div>
+      <div id="admin_login_form">
+        <form>
+          <input type="text" placeholder="Admin Username" id="admin_username" />
+          <input type="text" placeholder="Admin Password" id="admin_password" />
+          <button onclick="adminlogin()" id="admin_login_btn">
+            Admin Login
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="termsNcondi">
+      <p>
+        By “logging in to KFC”, you agree to our
+        <a href="">Privacy Policy</a> and <a href="">Terms & Conditions.</a>
+      </p>
+    </div>
+    <div id="line-dash">________________or________________</div>
+    <div id="skip_guest">
+      <button><a href="./index.html">Skip,Continue As Guest</a></button>
+    </div>
+  </body>
+</html>
+<script src="./login.js"></script>

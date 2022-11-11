@@ -4,6 +4,7 @@ let nav=document.getElementById("navbar");
 nav.innerHTML = navbar();
 
 
+
 const cart = async()=>{
 
     try {
@@ -142,4 +143,5 @@ const append_items = (data)=>{
    
    checkout.innerText= subtotal+GST+lcb+hope;
 }
+
 
