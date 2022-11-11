@@ -404,6 +404,60 @@
   ],
   "cart": [
 
+    {}
+  ],
+  "DEALS": [
+    {
+      "id": "1",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYZINGER.jpg",
+      "name": "Free Chicken...",
+      "description": "Free Chicken Zinger on a cart value of 499 or more. Friday only"
+    },
+    {
+      "id": "2",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYPOP.jpg",
+      "name": "Free Popcorn...",
+      "description": "Free Popcorn (Med) on a cart value of 499 or more. Friday only."
+    },
+
+    {
+      "id": "3",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYCHKN.jpg",
+      "name": "Free 1pc Chicken",
+      "description": "Free 1pc Chicken on a cart value of 499 or more. Friday only."
+    },
+    {
+      "id": "4",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYSTRIPS.jpg",
+      "name": "Free 3pc Striped Chicken",
+      "description": "Free 3pc Strips on a cart value of 499 or more. Friday only."
+    },
+    {
+      "id": "5",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYVZINGER.jpg",
+      "name": "Free Veg Zinger",
+      "description": "Free Veg Zinger on a cart value of 499 or more. Friday only."
+    },
+    {
+      "id": "6",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYFRIES.jpg",
+      "name":"Free Fries...",
+      "description": "Free Fries (Med) on a cart value of 499 or more. Friday only."
+    },
+    {
+      "id": "7",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/ADDCHK99.jpg",
+      "name": "Add 2pc Hot Chicken...",
+      "description": "Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or "
+    },
+    {
+      "id": "8",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/BIGSAVE.jpg",
+      "name": "Upto 100Rs Off...",
+      "description": "Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th "
+    },
+
+
     {
       "id": 1,
       "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=21.87",
@@ -476,6 +530,7 @@
       "price": 1200,
       "description": "Kings Favourite-Lipsmacking and tangy"
     }
+
 
   ]
 }
