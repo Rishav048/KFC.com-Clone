@@ -23,7 +23,7 @@ html{
 #menu{
     
     width: 25%;
-    border: 1px solid blue;
+    border: 0px solid blue;
     height: 600px;
     text-align: left;
     position: fixed;
@@ -34,7 +34,7 @@ html{
 #categories{
     margin-left: 28.3%;
     width: 71%;
-    border: 1px solid greenyellow;
+    border: 0px solid greenyellow;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #f8f7f5;

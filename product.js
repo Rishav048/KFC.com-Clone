@@ -31,10 +31,10 @@ let valueINlink = ["CHICKEN_BUCKETS","NEW_LAUNCH","BIRYANI_BUCKETS","BOX_MEALS",
 
 for(let i=0; i<8; i++){      // This loop is to fetch the data one by one from db.json
 
-const getData = async () =>{
+const getData = async (v) =>{
     try{
         let response = await fetch(`http://localhost:3000/${valueINlink[i]}`)
-        let data = await response.json();
+        let data = await response.json();                                    
       //  console.log(data)
       if(valueINlink[i] == "CHICKEN_BUCKETS"){
         //console.log(data)
