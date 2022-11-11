@@ -1,3 +1,4 @@
+
 // Importing navBar and Start Order
 import { navbar,startDiv } from "./Compopnents/navbar.js";
 
@@ -9,7 +10,6 @@ navbarDiv.innerHTML=navbar();
 // Appending Start Order
 let startOrder=document.getElementById("startDiv");
 startOrder.innerHTML=startDiv();
-
 
 
 // Menu page button
@@ -98,6 +98,3 @@ let carosel=document.querySelector("#carosel");
 carosel.addEventListener("click",()=>{
     window.location.href="./product.html"
 })
-
-// hello
-

@@ -1,0 +1,152 @@
+#crud {
+  display: flex;
+  /* border: 1px solid green; */
+  justify-content: space-around;
+}
+#add_info {
+  /* background-image: url(https://www.shutterstock.com/image-vector/crispy-fried-chicken-seamless-pattern-600w-1502792384.jpg); */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgb(241, 5, 5);
+  /* background-color: rgb(209, 52, 52); */
+}
+#add_them {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(0, 255, 102); */
+  height: 15%;
+}
+
+#formed {
+  margin-top: 10px;
+  /* border: 1px solid pink; */
+  width: 350px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+#formed form input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 190px;
+  height: 20px;
+}
+#add_items {
+  border: 1px solid black;
+  width: 190px;
+  font-weight: bold;
+  background-color: salmon;
+}
+::placeholder {
+  color: red;
+}
+#welcome {
+  /* background-color: rgb(249, 243, 243); */
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {
+    color: rgb(249, 243, 243);
+  }
+  to {
+    color: black;
+  }
+}
+#update {
+  /* background-image: url(https://www.shutterstock.com/image-vector/crispy-fried-chicken-seamless-pattern-600w-1502792384.jpg); */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgb(241, 5, 5);
+  /* background-color: rgb(209, 52, 52); */
+}
+
+#update_them {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(0, 255, 102); */
+  height: 15%;
+}
+#update_form {
+  margin-top: 10px;
+  /* border: 1px solid pink; */
+  width: 350px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+#update_form form input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 190px;
+  height: 20px;
+}
+#update_items {
+  border: 1px solid black;
+  width: 190px;
+  font-weight: bold;
+  background-color: salmon;
+}
+#delete_item {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgb(241, 5, 5);
+}
+#delete_them {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(0, 255, 102); */
+  height: 15%;
+  font-weight: bold;
+  font-size: 25px;
+}
+#delete_form {
+  margin-top: 10px;
+  /* border: 1px solid pink; */
+  width: 350px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 25px;
+}
+
+#delete_form form input {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 15px;
+  width: 190px;
+  height: 20px;
+}
+#delete_id_button {
+  border: 1px solid black;
+  width: 190px;
+  font-weight: bold;
+  background-color: salmon;
+}
