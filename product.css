@@ -1,0 +1,250 @@
+
+html{
+    scroll-behavior: smooth;
+
+    
+    scroll-margin-top: 200px;
+        
+    
+
+
+}
+
+
+#container{
+   
+    width: 90%;
+    border:1px solid rgb(255, 255, 255);
+    height: auto;
+    margin: auto;
+    padding-right: 0px;
+
+}
+#menu{
+    
+    width: 25%;
+    border: 0px solid blue;
+    height: 600px;
+    text-align: left;
+    position: fixed;
+    background-color: #ffffff;
+    
+}
+
+#categories{
+    margin-left: 28.3%;
+    width: 71%;
+    border: 0px solid greenyellow;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f7f5;
+
+}
+
+#menuimg{
+    height: 30px;
+    margin-bottom: -4px;
+}
+#menuHeading{
+   font-family:fantasy;
+   font-weight: 60;
+   letter-spacing: 2.2px;
+  
+}
+#menu>h3{
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 15px;
+    color: rgb(164, 164, 164);
+    line-height: 26px;
+    text-decoration: none;
+
+}
+#menu>h3>a{
+    text-decoration: none;
+    color: rgb(164, 164, 164);
+}
+#menu>h3>a:hover{
+    font-size: 18px;
+    color: rgb(33, 37, 41);
+}
+
+#search_div{
+    border: 1px solid rgb(33, 37, 41);
+    border-radius: 20px;
+    margin-left: 2px;
+    width: 23%;
+    margin-top: 70px;
+    height: 27px;
+    display: flex;
+    padding-left: 11px;
+    padding-right: 11px;
+     align-items: center;
+     font-size: 13px;
+
+}
+
+#search_div>input{
+    
+    height: 23px;
+    width:70%;
+    border: 0px solid red;
+    margin-left: 4px; 
+}
+
+#line{
+    font-weight: bold;
+    background-color: black;
+    font-size: 20px;
+    
+}
+
+.section_divs{
+    border:0px solid rgb(0, 255, 242);
+    height: auto;
+    width: 100%;
+    padding-top: -50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+#CHICKEN_BUCKETS{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+#CHICKEN_BUCKETS>div>div:nth-child(5){
+    width: 100%;
+    border:0px solid blue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.section_divs div{
+    border:none;
+}
+
+h2{
+    color: rgb(33, 37, 41);
+    font-family:fantasy;
+   font-weight: 50;
+   letter-spacing: 0.7px;
+   margin-top: 15px;
+   
+}
+/* ************* Style For each Card*************** */
+.cardImg{
+    width:100%;
+    height: 260px;
+    border-radius: 4px;
+}
+
+.section_divs>div{
+    border:0px solid green;
+    height: 465px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px 0px; 
+   
+}
+
+.icondiv{
+    border: 1px solid yellow;
+    display: flex;
+    gap:3px;
+    height: auto;
+    margin-top: -13px;
+}
+
+.Cardname{
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight:600;
+    color: #202124;
+    line-height: 11px; 
+}
+
+.icondiv>p{
+    font-family: system-ui;
+    font-size: 12px;
+    font-weight:400;
+    color: #494949;
+    line-height: 16px; 
+   
+}
+
+.Cardprice{
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight:600;
+    color:#202124;
+    line-height: 7px; 
+}
+
+.Carddescription{
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight:400;
+    color:#494949;
+    line-height: 14px; 
+}
+
+.add_to_cart{
+    margin-top: auto;
+    width: 180px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 24px;
+    background-color: #e4002b;
+    border-radius: 200px;
+    border:none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    
+}
+
+.content_div{
+    border:1px solid red;
+    height: 80px;
+    margin-top: -13px;
+}
+.btndiv{
+    width: 100%;
+    border:1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ***************lOADER************ */
+
+#loader_div{
+        position:fixed;
+        top:10%;
+        left:30%;
+        border:0px solid green;
+        width:100%;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+
+}
+
+#loader_div>img{
+    width:550px;
+    height: 550px;
+}
+
+#ContItems{
+    margin-right: 30px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #e4002b;
+}
