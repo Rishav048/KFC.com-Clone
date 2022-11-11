@@ -98,3 +98,74 @@ let carosel=document.querySelector("#carosel");
 carosel.addEventListener("click",()=>{
     window.location.href="./product.html"
 })
+
+
+
+
+const dealsCard=document.getElementById("dealsCard");
+
+const getData = async () =>{
+    try{
+        let response = await fetch(`http://localhost:3000/DEALS`)
+        let data = await response.json();                                    
+        console.log('data:', data)
+
+        appendData(data)
+    //   if(valueINlink[i] == "CHICKEN_BUCKETS"){
+    //     //console.log(data)
+    //     appendData(data,CHICKEN_BUCKETS)
+    //   }
+      
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+getData();
+
+
+const appendData = (data) =>{
+    
+    dealsCard.innerHTML = null;
+    data.forEach((el)=>{
+
+     let card = document.createElement("div");
+
+     let image = document.createElement("img");
+     image.setAttribute("class","cardImage");
+     image.src = el.image;
+
+     let name = document.createElement("h5");
+     name.setAttribute("class","dealsName")
+     name.innerHTML = el.name;
+
+     let descriprtion = document.createElement("p");
+     descriprtion.setAttribute("class","descriprtion")
+     descriprtion.innerHTML = el.description;
+     
+     let btnsDiv=document.createElement("div");
+     btnsDiv.setAttribute("class","btnsDiv")
+
+     let viewBtn=document.createElement("p");
+     viewBtn.innerText="View Details";
+     viewBtn.style.textDecoration="underline"
+
+     let redeemBtn=document.createElement("button");
+     redeemBtn.innerText="Redeem";
+
+     redeemBtn.addEventListener("click",()=>{
+        redeemCode();
+
+     });
+
+     btnsDiv.append(viewBtn,redeemBtn);
+
+     card.append(image,name,descriprtion,btnsDiv);
+     dealsCard.append(card);
+
+    });
+}
+
+const redeemCode=()=>{
+    window.location.href="./deals.html"
+}
