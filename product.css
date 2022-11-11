@@ -25,7 +25,7 @@ html{
     
 }
 
-#categories{
+#Categories{
     margin-left: 28.3%;
     width: 71%;
     border: 0px solid greenyellow;
@@ -35,7 +35,7 @@ html{
 
 }
 
-#menuimg{
+#menuimg1{
     height: 30px;
     margin-bottom: -4px;
 }
@@ -242,3 +242,10 @@ h2{
     font-weight: bolder;
     color: #e4002b;
 }
+
+ /* CLICKING TO SCROLL SMOTH DIVS */
+
+ .adjustDiv{
+    border: 1px solid red;
+    height: 130px;
+ }

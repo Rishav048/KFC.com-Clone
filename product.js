@@ -1,9 +1,9 @@
 let nav = document.getElementById("Navbar");
 let strtdiv = document.getElementById("startDiv");
 
-import{navbar,startDiv} from "./Compopnents/navbar.js";
-nav.innerHTML = navbar();
-strtdiv.innerHTML = startDiv();
+// import{navbar,startDiv} from "./Compopnents/navbar.js";
+// nav.innerHTML = navbar();
+// strtdiv.innerHTML = startDiv();
 
 
 // require('events').EventEmitter.prototype._maxListeners = 100;
@@ -144,8 +144,8 @@ let productCount = localStorage.getItem("count") || 0;
 let totalprice = +(localStorage.getItem("addedprice") || 0);
 
 //This is for appending the price
-let priceupdate = document.getElementById("wallet");
-priceupdate.innerHTML = totalprice;
+// let priceupdate = document.getElementById("wallet");
+// priceupdate.innerHTML = totalprice;
 
 //This is for appending the itemcount
 let itemcount = document.getElementById("ContItems");
@@ -231,4 +231,23 @@ searchicon.addEventListener("click",()=>{
   console.log("invoked Search");
   searchitems()
 })
+}
+
+
+// Adding scroll div function
+
+let scrolldivs = document.getElementsByClassName("clickscroll");
+console.log(scrolldivs)
+let adjustDiv = document.getElementsByClassName("adjustDiv");
+adjustDiv[0].style.display = "none";
+console.log(adjustDiv)
+
+
+for (var i = 0 ; i < scrolldivs.length; i++) {
+
+  scrolldivs[i].addEventListener( "click", ()=>{
+    console.log("invoked")
+    adjustDiv[0].style.display = "block";
+  }) 
+ 
 }
