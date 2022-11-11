@@ -1,0 +1,136 @@
+#container_login {
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  height: 300px;
+  justify-content: space-evenly;
+}
+#register_form {
+  /* border: 1px solid rgb(48, 225, 20); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: palevioletred;
+}
+#register_form form input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+}
+#register_button {
+  border: 1px solid forestgreen;
+  width: 157px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 5px;
+}
+#register_button:hover {
+  background-color: red;
+}
+
+#login_form {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: palevioletred;
+}
+#login_form form input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+}
+#user_login_btn {
+  border: 1px solid forestgreen;
+  width: 157px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 5px;
+}
+#user_login_btn:hover {
+  background-color: red;
+}
+
+#admin_login_form {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: palevioletred;
+}
+#admin_login_form form input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+}
+#admin_login_btn {
+  border: 1px solid forestgreen;
+  width: 157px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 5px;
+}
+#admin_login_btn:hover {
+  background-color: red;
+}
+#write_login_signup {
+  text-align: center;
+}
+#kfc_image_link {
+  text-align: center;
+}
+#welcome_text {
+  text-align: center;
+}
+#termsNcondi {
+  font-size: small;
+  text-align: center;
+}
+p a {
+  margin-top: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#line-dash {
+  /* border: 1px solid grey; */
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  color: rgb(66, 63, 63);
+  margin-bottom: 20px;
+}
+#skip_guest {
+  /* border: 1px solid grey; */
+  width: 250px;
+  margin: auto;
+  color: black;
+  font-weight: bold;
+}
+#skip_guest button {
+  color: black;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  margin-left: 38px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#skip_guest button a {
+  text-decoration: none;
+  color: black;
+}
