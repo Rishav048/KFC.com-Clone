@@ -46,8 +46,9 @@ const addProducts = async() => {
             description
  };
 
- let res= await fetch(`http://localhost:3000/CHICKEN_BUCKETS`,{
-//       http://localhost:3000/CHICKEN_BUCKETS
+
+ let res= await fetch(`http://localhost:3000/BOX_MEALS`,{
+//   http://localhost:3000/CHICKEN_BUCKETS
 //   http://localhost:3000/NEW_LAUNCH
 //   http://localhost:3000/BIRYANI_BUCKETS
 //   http://localhost:3000/BOX_MEALS
@@ -64,7 +65,7 @@ const addProducts = async() => {
 
 
  });
- let data=await res.json();
+ let data = await res.json();
  console.log('data:', data);
 
 
