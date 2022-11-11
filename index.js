@@ -1,6 +1,7 @@
 
-// Importing navBar and Start Order
+// Importing navBar,footer and Start Order
 import { navbar,startDiv } from "./Compopnents/navbar.js";
+import { footer } from "./Compopnents/footer.js";
 
 // Appending navBar
 let navbarDiv=document.getElementById("Navbar");
@@ -11,6 +12,9 @@ navbarDiv.innerHTML=navbar();
 let startOrder=document.getElementById("startDiv");
 startOrder.innerHTML=startDiv();
 
+// Appending footer
+let footerDiv=document.getElementById("footer");
+footerDiv.innerHTML=footer();
 
 // Menu page button
 let menuBtn=document.getElementById("menuBtn")
