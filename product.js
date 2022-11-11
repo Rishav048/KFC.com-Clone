@@ -185,7 +185,8 @@ const searchitems = async() =>{
   // console.log(value)
   let res = await fetch(`http://localhost:3000/${valueINlink[i]}?q=${value}`);
   let data = await res.json();
-  
+ 
+  console.log(data);
   if(data.length !== 0){
    // console.log("data",data);
     for(let j=0; j<data.length; j++){
@@ -227,6 +228,7 @@ const searchitems = async() =>{
 
 let searchicon = document.getElementById("tap");
 searchicon.addEventListener("click",()=>{
+  console.log("invoked Search");
   searchitems()
 })
 }
