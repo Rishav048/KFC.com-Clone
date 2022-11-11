@@ -99,3 +99,5 @@ carosel.addEventListener("click",()=>{
     window.location.href="./product.html"
 })
 
+// hello
+
