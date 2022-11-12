@@ -143,9 +143,9 @@ const appendData = (data) =>{
      let btnsDiv=document.createElement("div");
      btnsDiv.setAttribute("class","btnsDiv")
 
-     let viewBtn=document.createElement("p");
-     viewBtn.innerText="View Details";
-     viewBtn.style.textDecoration="underline"
+    //  let viewBtn=document.createElement("p");
+    //  viewBtn.innerText="View Details";
+    //  viewBtn.style.textDecoration="underline"
 
      let redeemBtn=document.createElement("button");
      redeemBtn.innerText="Redeem";
@@ -155,7 +155,7 @@ const appendData = (data) =>{
 
      });
 
-     btnsDiv.append(viewBtn,redeemBtn);
+     btnsDiv.append(redeemBtn);
 
      card.append(image,name,descriprtion,btnsDiv);
      dealsCard.append(card);
@@ -166,3 +166,14 @@ const appendData = (data) =>{
 const redeemCode=()=>{
     window.location.href="./deals.html"
 }
+
+
+let cartBucket=document.getElementById("cartBucket");
+cartBucket.addEventListener("click",()=>{
+    window.location.href="./cart.html"
+})
+
+let navRightCorner=document.getElementById("navRightCorner");
+navRightCorner.addEventListener("click",()=>{
+    window.location.href="./login.html"
+})
