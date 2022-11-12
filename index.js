@@ -168,7 +168,7 @@ const redeemCode=()=>{
 }
 
 
-let cartBucket=document.getElementById("cartBucket");
+let cartBucket=document.querySelector(".navRight img");
 cartBucket.addEventListener("click",()=>{
     window.location.href="./cart.html"
 })
@@ -176,4 +176,9 @@ cartBucket.addEventListener("click",()=>{
 let navRightCorner=document.getElementById("navRightCorner");
 navRightCorner.addEventListener("click",()=>{
     window.location.href="./login.html"
+})
+
+let gotoDealsPage=document.querySelector("#menuBtn+h6");
+gotoDealsPage.addEventListener("click",()=>{
+    window.location.href="./deals.html"
 })
