@@ -1,10 +1,17 @@
 let nav = document.getElementById("Navbar");
 let strtdiv = document.getElementById("startDiv");
+let footerDiv = document.getElementById("footer");
+console.log(footerDiv)
 
+//Importing navbar and startdiv here;
 import{navbar,startDiv} from "./Compopnents/navbar.js";
 nav.innerHTML = navbar();
 strtdiv.innerHTML = startDiv();
 
+//Importing Footer here
+import{ footer } from "./Compopnents/footer.js";
+
+footerDiv.innerHTML=footer();
 
 // require('events').EventEmitter.prototype._maxListeners = 100;
 
@@ -120,6 +127,7 @@ const appendData = (data,container) =>{
      btnimg.setAttribute("class","btnimg");
      let addbtn = document.createElement("button");
      addbtn.setAttribute("class","add_to_cart");
+     addbtn.setAttribute("id","idaddtocart")
      addbtn.innerHTML =`Add to Cart`;
      addbtn.addEventListener("click",() =>{
               addToCart(el);
@@ -138,22 +146,59 @@ const appendData = (data,container) =>{
 
 
 // ************** ADD TO CART *****************
+let itemcount = document.getElementById("ContItems");
+let priceupdate = document.getElementById("wallet");
+
+// Showing Cart array.length to show the count of item added;
+//Showing amount according to db.json;
+const cartdata = async()=>{
+
+  try {
+      let res= await fetch (`http://localhost:3000/cart`) ;
+      let data= await res.json();
+      console.log("cartdata",data);
+      itemcount.innerHTML = (data.length);
+      //For showing the amount;
+      let amount = 0;
+      for(let i=0; i<data.length; i++){
+         
+         amount += (+data[i].price);
+      }
+
+      //The total amount of cart is here now append it where you want;
+      console.log(amount);
+      priceupdate.innerHTML = amount; 
+
+  } catch (error) {
+
+      console.log(error);
+  }
+
+}
+cartdata();
+
+
 
 //Storing and geting the Price and itemscount of the cart
-let productCount = localStorage.getItem("count") || 0;
 let totalprice = +(localStorage.getItem("addedprice") || 0);
 
 //This is for appending the price
-let priceupdate = document.getElementById("wallet");
-priceupdate.innerHTML = totalprice; 
+
 
 //This is for appending the itemcount
-let itemcount = document.getElementById("ContItems");
-itemcount.innerHTML = productCount;
+
 
 
 const addToCart = async (el) =>{
     el.id = null;
+    let btn = document.getElementById("idaddtocart");
+    btn.innerHTML = "ITEM ADDED TO CART"
+    // btn.disabled = true;
+    // btn.style.backgroundColor = "blue";
+    // btn.style.borderRadius = "0px"
+    
+    
+
    try{
    let response  = await fetch(`http://localhost:3000/cart`,{
     method:"POST",
@@ -165,10 +210,7 @@ const addToCart = async (el) =>{
 
    let data = await response.json();
    console.log(data);
-   productCount++;
-   localStorage.setItem("count",productCount);
-   let amount = totalprice + (+el.price)
-   localStorage.setItem("addedprice",amount)
+
    }
    catch(e){
     console.log(e)
@@ -240,19 +282,18 @@ searchicon.addEventListener("click",()=>{
 let scrolldivs = document.getElementsByClassName("clickscroll");
 //console.log(scrolldivs)
 let adjustDiv = document.getElementsByClassName("adjustDiv");
-for(let i=0; i<adjustDiv; i++){
-adjustDiv[i].style.display = "none";
-//console.log(adjustDiv)
-}
+// for(let i=0; i<adjustDiv; i++){
+// adjustDiv[i].style.display = "none";
+// //console.log(adjustDiv)
+// }
 
 for (var i = 0 ; i < scrolldivs.length; i++) {
   
   scrolldivs[i].addEventListener( "click", ()=>{
     //console.log("invoked")
-    for(let j=0; j<adjustDiv.length; i++){
+     for(let j=0; j<adjustDiv.length; j++){
       adjustDiv[j].style.display = "block";
-    }
-    
+     }
   }) 
  
 }
@@ -276,7 +317,9 @@ HighToLow.addEventListener("click",()=>{
 
 // let valueINlink = ["CHICKEN_BUCKETS","NEW_LAUNCH","BIRYANI_BUCKETS","BOX_MEALS","BURGERS","SNACKS","STAY_HOME_SPECIALS","BEVERAGES"];
 let shorArr = [];
+let newtext = document.getElementById("changetext");
 const sortingitems = async(value)=>{
+  
   console.log(value)
   for(let i=0; i<8; i++){
   let res = await fetch(`http://localhost:3000/${valueINlink[i]}?_sort=price&_order=${value}`);
@@ -286,12 +329,18 @@ const sortingitems = async(value)=>{
     shorArr.push(data[j]);
    }
   }
+  
   if(value == "acc"){
     shorArr.sort((a,b)=>{
       return a.price - b.price;
     })
     console.log(shorArr)
+    newtext.innerHTML = "(¯`◕‿◕´¯)_______________LOW ➠ HIGH_______________(¯`◕‿◕´¯)";
+    newtext.style.fontSize = "25px";
+     newtext.style.color = "red";
+
     appendData(shorArr,CHICKEN_BUCKETS)
+    
   }
   else{
     shorArr.sort((a,b)=>{
@@ -299,6 +348,9 @@ const sortingitems = async(value)=>{
     })
     console.log(shorArr)
     appendData(shorArr,CHICKEN_BUCKETS)
+    newtext.innerHTML = "(¯`◕‿◕´¯)_______________HIGH ➠ LOW_______________(¯`◕‿◕´¯)";
+    newtext.style.fontSize = "25px";
+     newtext.style.color = "red";
   }
   
 }
