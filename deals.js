@@ -90,7 +90,8 @@ const redeemCode=()=>{
 let veiwDealsData=document.getElementById("veiwDealsData");
 veiwDealsData.style.display="none";
 const viewDetails=(data)=>{
-     console.log("in details")
+    veiwDealsData.innerHTML=null;
+    //  console.log("in details")
     let div=document.createElement("div");
 
     let v_image=document.createElement("img");
