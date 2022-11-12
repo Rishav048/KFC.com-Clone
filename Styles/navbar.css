@@ -1,0 +1,105 @@
+#fixed{
+    font-family: "National 2 Regular Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    height: 32px;
+    display: flex;
+    padding:1% ;
+    color: #202124;
+    background-color: #f6f3f0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+    border-bottom: 1px solid rgb(157, 159, 161);
+  }
+  
+  #fixed button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  #Navbar{
+      width:100%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      background-color: #f6f3f0;
+      top:0;
+      bottom: 0;
+      position: sticky;
+      z-index: 99;
+      cursor: pointer;
+  }
+  
+  #mainNav{
+      display: flex;
+      justify-content: space-between;
+      width:95%;
+      font-size: 18px;
+  }
+
+  @media all and (min-width:350px) and (max-width:700px){
+    #mainNav{
+        flex-direction: column;
+    }
+}
+  
+  #mainNav .navLeft{
+      display: flex;
+      margin-left: -8%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap:8%;
+      font-size: 25px;
+  }
+  
+  #mainNav .navRight{
+      margin-right: -5%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap:2%;
+  }
+  
+  .navRight>img{
+     width:20%;
+  }
+  
+  .logo{
+      width:35% ;
+      border-radius: 25px;
+      margin-right: -60%;
+  }
+  
+  #startDiv{
+      padding-top: 1%;
+      padding-bottom: 1%;
+      display: flex;
+      width:100%;
+      justify-content: center;
+      text-align: center;
+      background-color: black;
+      color: white;
+      align-items: center;
+  }
+  
+  #startDiv>.startBtn{
+      padding: 1%;
+      color: white;
+      background-color: #e4002b;
+      border-radius: 5%;
+      padding: 11px 40px;
+      border-radius: 200px;
+      height: 44px;
+      cursor: pointer;
+      margin-left: 2%;
+  }
+
+  #navRightCorner{
+    width:35%;
+}

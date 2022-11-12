@@ -26,35 +26,41 @@
     <div id="linelogo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==" alt=""></div>
     <div id="heading"><h1>MY CART</h1></div>
     <div id="container">
-        <div id="box"></div>
+        <div id="box">
+            <div id="box_item"></div>
+            <div id="box_btn">
+                <button id="remove_all"> Remove all </button>
+                <button id="add_more_menu">Add More menu</button>
+            </div>
+        </div>
         <div id="bill">
             <div>
                 <div>
-                    <h1 id="total_items"></h1>
+                    <h1 ><span id="total_items"></span> <span>item</span></h1>
                 </div>
                 <div>
                     <img src="https://online.kfc.co.in/static/media/Offers_Coupon_Icon.72b94c41.svg" alt="">
                     <p>Apply offers and Deals</p>
-                    <button>View All</button>
+                    <button id="view_all">View All</button>
                 </div>
-                <div>
+                
                     <div>
                     <p>Subtotal</p>
-                    <p id="subtotal"></p>
+                    <p id="subtotal">200</p>
                 </div>
                     <div>
                     <p>GST</p>
-                    <p id="gst"></p>
+                    <p id="gst">15</p>
                     </div>
-                    <div>
-                    <p id="large_carry_bag"></p>
-                    <p id="lgb_total"></p>
+                    <div id="large_carry_bag">
+                    <p >large carry bag</p>
+                    <p id="lgb_total">₹6.00</p>
                     </div>
-                    <div>
-                    <p id="add_hope"></p>
-                    <p id="add_hope_total"></p>
+                    <div id="add_hope">
+                    <p >add hope</p>
+                    <p id="add_hope_total">₹5.00</p>
                     </div>
-                </div>
+                
                 <div>
                     <input type="checkbox" name="carry bag" id="carry_bag">
                     <p>₹6.00 Tick to add a large carry bag.</p>
@@ -72,7 +78,7 @@
                     </div>
                 </div>
                 <div>
-                    <button id="checkout"><span>Checkout</span> <span id="total">&#8377</span> </button>
+                    <button id="checkout"><span>Checkout</span> <span id="total">&#8377 </span> </button>
                 </div>
                 
             </div>
@@ -166,3 +172,6 @@
 </html>
 
 <script type="module" src="./cart.js"></script>
+
+
+
