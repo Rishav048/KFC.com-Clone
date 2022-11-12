@@ -217,7 +217,7 @@ const addToCart = async (el) =>{
    }
 }
 
-//Seach funtonallity (It will search according to value in all array and the rest divs will be null);
+//Search funtonallity (It will search according to value in all array and the rest divs will be null);
 // let valueINlink = ["CHICKEN_BUCKETS","NEW_LAUNCH","BIRYANI_BUCKETS","BOX_MEALS","BURGERS","SNACKS","STAY_HOME_SPECIALS","BEVERAGES"];
 let Searcharr = [];
 for(let i=0; i<8; i++){ 
@@ -268,10 +268,16 @@ const searchitems = async() =>{
   }
 }
 
-let searchicon = document.getElementById("tap");
-searchicon.addEventListener("click",()=>{
-  console.log("invoked Search");
-  searchitems()
+// Invoke Search Function onkeydown
+
+let searchEnter = document.getElementById("search");
+searchEnter.addEventListener("keydown",(event)=>{
+  
+  if(event.key == "Enter"){
+    console.log(event.key)
+    searchitems()
+  }
+  // console.log(event.key)
 })
 }
 
@@ -356,4 +362,17 @@ const sortingitems = async(value)=>{
 }
 
 
+// Go TO Cart page
 
+let cartPage = document.querySelector(".navRight>img");
+ cartPage.onclick = ()=>{
+   window.location.href ="./cart.html"
+ }
+
+// Go to HomePage
+
+let HomePage = document.querySelector(".navLeft>h6:last-child");
+console.log(HomePage)  //Catching the h6 --> Deals
+ HomePage.onclick = ()=>{
+   window.location.href ="./deals.html"
+ }
