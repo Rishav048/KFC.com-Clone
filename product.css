@@ -252,7 +252,7 @@ h2{
  /* CLICKING TO SCROLL SMOTH DIVS */
 
  .adjustDiv{
-    border: 1px solid red;
+    border: 0px solid red;
     height: 140px;
     display: none;
  }
