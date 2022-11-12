@@ -1,9 +1,9 @@
 let nav = document.getElementById("Navbar");
 let strtdiv = document.getElementById("startDiv");
 
-// import{navbar,startDiv} from "./Compopnents/navbar.js";
-// nav.innerHTML = navbar();
-// strtdiv.innerHTML = startDiv();
+import{navbar,startDiv} from "./Compopnents/navbar.js";
+nav.innerHTML = navbar();
+strtdiv.innerHTML = startDiv();
 
 
 // require('events').EventEmitter.prototype._maxListeners = 100;
@@ -144,8 +144,8 @@ let productCount = localStorage.getItem("count") || 0;
 let totalprice = +(localStorage.getItem("addedprice") || 0);
 
 //This is for appending the price
-// let priceupdate = document.getElementById("wallet");
-// priceupdate.innerHTML = totalprice;
+let priceupdate = document.getElementById("wallet");
+priceupdate.innerHTML = totalprice; 
 
 //This is for appending the itemcount
 let itemcount = document.getElementById("ContItems");
@@ -235,19 +235,73 @@ searchicon.addEventListener("click",()=>{
 
 
 // Adding scroll div function
+// Class name catches array so for loop is needed;
 
 let scrolldivs = document.getElementsByClassName("clickscroll");
-console.log(scrolldivs)
+//console.log(scrolldivs)
 let adjustDiv = document.getElementsByClassName("adjustDiv");
-adjustDiv[0].style.display = "none";
-console.log(adjustDiv)
-
+for(let i=0; i<adjustDiv; i++){
+adjustDiv[i].style.display = "none";
+//console.log(adjustDiv)
+}
 
 for (var i = 0 ; i < scrolldivs.length; i++) {
-
+  
   scrolldivs[i].addEventListener( "click", ()=>{
-    console.log("invoked")
-    adjustDiv[0].style.display = "block";
+    //console.log("invoked")
+    for(let j=0; j<adjustDiv.length; i++){
+      adjustDiv[j].style.display = "block";
+    }
+    
   }) 
  
 }
+
+
+//
+
+// Sorting function;
+
+let lowToHigh = document.getElementById("acc");  //catching the buttons and adding onclick
+lowToHigh.addEventListener("click", ()=>{
+     let value = "acc"
+     sortingitems(value);
+})
+
+let HighToLow = document.getElementById("dec");
+HighToLow.addEventListener("click",()=>{
+     let value = "dec"
+     sortingitems(value);
+})
+
+// let valueINlink = ["CHICKEN_BUCKETS","NEW_LAUNCH","BIRYANI_BUCKETS","BOX_MEALS","BURGERS","SNACKS","STAY_HOME_SPECIALS","BEVERAGES"];
+let shorArr = [];
+const sortingitems = async(value)=>{
+  console.log(value)
+  for(let i=0; i<8; i++){
+  let res = await fetch(`http://localhost:3000/${valueINlink[i]}?_sort=price&_order=${value}`);
+   let data = await res.json();
+   //console.log("data",data);
+   for(let j=0; j<data.length; j++){
+    shorArr.push(data[j]);
+   }
+  }
+  if(value == "acc"){
+    shorArr.sort((a,b)=>{
+      return a.price - b.price;
+    })
+    console.log(shorArr)
+    appendData(shorArr,CHICKEN_BUCKETS)
+  }
+  else{
+    shorArr.sort((a,b)=>{
+      return b.price - a.price;
+    })
+    console.log(shorArr)
+    appendData(shorArr,CHICKEN_BUCKETS)
+  }
+  
+}
+
+
+
