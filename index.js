@@ -22,13 +22,6 @@ menuBtn.addEventListener("click",()=>{
     window.location.href="./product.html"
 })
 
-// Cart page button
-let cartBtn=document.getElementById("cartBtn")
-cartBtn.addEventListener("click",()=>{
-    window.location.href="./cart.html";
-})
-
-
 
 // Carousel using TimeOut
 
