@@ -28,7 +28,7 @@ html{
 #Categories{
     margin-left: 28.3%;
     width: 71%;
-    border: 0px solid greenyellow;
+    border: 1px solid white;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #f8f7f5;
@@ -81,8 +81,11 @@ html{
     
     height: 23px;
     width:70%;
-    border: 0px solid red;
+    border:0px solid white;
     margin-left: 4px; 
+    border-radius: 20px;
+    background-color:rgb(248, 247, 245);
+
 }
 
 #line{
@@ -246,6 +249,6 @@ h2{
  /* CLICKING TO SCROLL SMOTH DIVS */
 
  .adjustDiv{
-    border: 1px solid red;
+    border: 0px solid red;
     height: 130px;
  }

@@ -438,3 +438,100 @@
    #box>div{
     margin-bottom: 10px;
    }
+   
+   #box_item{
+    
+   
+   
+    border-radius: 5px;
+
+   }
+   #box_item>div>div>img{
+    width: 35%;
+    margin-right: 30px;
+    border-radius: 3px;
+   }
+   #box_item>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f7f5;
+    margin-bottom: 10px;
+    border-radius: 5px;
+   
+   }
+   #box_item>div>div:nth-child(1) {
+    width: 50%;
+    display: flex;
+    
+    margin: 10px 15px;
+   }
+   #box_item>div>div:nth-child(2){
+    display: flex;
+    margin-right: 60px;
+   }
+   #box_item h1{
+    font-size: 14px;
+    
+    margin-bottom: 50px;
+    
+   }
+
+   .min_btn{
+    font-size: 50px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; 
+   
+    
+   }
+
+   .max_btn{
+    font-size: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 50px;
+   }
+
+
+   .rem_btn{
+        border: 0px;
+        background-color: #ffffff;
+       text-decoration: underline;
+   }
+   .rem_btn:hover{
+    background-color: #e3e3e3;
+    cursor: pointer;
+   }
+
+   .min_btn>div{
+    margin-top: -75%;
+   }
+   .max_btn>div{
+    margin-top: -15%;
+   }
+
+   #box_item h3{
+    margin-top: 5px;
+   }
+
+   .min_btn:hover{
+    background-color: #202124;
+    color: #ffffff;
+    cursor: pointer;
+   }
+
+   .max_btn:hover{
+    background-color: #202124;
+    color: #ffffff;
+    cursor: pointer;
+   }
+
+
+   #noi{
+    margin-left: -13.6%;
+   }
+   
