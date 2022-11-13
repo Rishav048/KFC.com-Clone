@@ -1,4 +1,3 @@
-
 function navbar (){
 
     return`<div id="mainNav">
@@ -15,7 +14,11 @@ function navbar (){
          <h4 id="navRightCorner" >Sign In</h4>
         <p>|</p>
         <h4 >₹ <span id="wallet">0</span></h4>
-        <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt="cartImg">  
+        <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt="cartImg">
+        <h5 id="noi"></h5>
+
+      
+       
 
     </div>
 
@@ -23,11 +26,4 @@ function navbar (){
 
 }
 
-function startDiv(){
-
-    return` <h4>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h4>
-    <button class="startBtn">Start Order</button> `
-
-}
-
-export {navbar,startDiv};
+export {navbar};
