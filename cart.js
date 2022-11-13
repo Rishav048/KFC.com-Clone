@@ -334,12 +334,12 @@ more_menu.onclick=()=>{
    window.location.href="./product.html";
 }
 
-let menu = document.getElementById("menubtn");
+let menu = document.getElementById("menuBtn");
 menu.onclick=()=>{
     window.location.href="./index.html";
 }
 
-let deals =document.getElementById("deals");
-deals.onclick=()=>{
+let deal =document.getElementById("deals");
+deal.onclick=()=>{
     window.location.href="./deals.html";
 }
