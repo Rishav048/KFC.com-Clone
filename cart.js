@@ -326,3 +326,20 @@ check_out.onclick=()=>{
     window.location.href="./checkout.html";
 
 }
+
+
+let more_menu =document.getElementById("add_more_menu");
+more_menu.onclick=()=>{
+  
+   window.location.href="./product.html";
+}
+
+let menu = document.getElementById("menubtn");
+menu.onclick=()=>{
+    window.location.href="./index.html";
+}
+
+let deals =document.getElementById("deals");
+deals.onclick=()=>{
+    window.location.href="./deals.html";
+}
