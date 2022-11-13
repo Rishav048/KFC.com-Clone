@@ -160,8 +160,14 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
     text-align: center;
 }
 
-#dealsCard div{
+#dealsCard>div{
     background-color: white;
+}
+
+#dealsCard>div:hover{
+    background-color: rgb(234, 197, 197);
+    width: 102%;
+    transition: ease-in;
 }
 
 #dealsCard img{
