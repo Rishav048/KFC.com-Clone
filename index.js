@@ -143,10 +143,6 @@ const appendData = (data) =>{
      let btnsDiv=document.createElement("div");
      btnsDiv.setAttribute("class","btnsDiv")
 
-    //  let viewBtn=document.createElement("p");
-    //  viewBtn.innerText="View Details";
-    //  viewBtn.style.textDecoration="underline"
-
      let redeemBtn=document.createElement("button");
      redeemBtn.innerText="Redeem";
 
