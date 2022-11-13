@@ -37,14 +37,17 @@ html{
     width:100%;
 }
 
-#dealsDivA div{
+#dealsDivA>div{
     background-color: white;
     text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5%;
 }
 
 #dealsDivA img{
     width:100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 #dealsDivA .dealBtnsDiv{
@@ -79,6 +82,8 @@ html{
 #veiwDealsData img{
     width:100%;
     margin-bottom: 40px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .dealBtnsDiv p{
@@ -90,8 +95,8 @@ html{
     margin: auto;
     text-align: center;
     box-shadow: rgba(249, 246, 246, 0.24) 0px 3px 8px;
-    border: 1px solid rgb(164, 208, 208);
-    padding: 10%;
+    border: 1px solid grey;
+    padding: 5%;
     background: white;
     color: rgb(11, 11, 11);
     z-index: 99;
@@ -99,8 +104,10 @@ html{
     margin-top:-950px;
 }
 
-#dealsDivA div:hover{
-    background-color: rgb(220, 236, 236);
+#dealsDivA>div:hover{
+    background-color: rgb(175, 238, 189);
+    width: 105%;
+    transition: ease-out;
 }
 
 #natOffers{
