@@ -376,3 +376,24 @@ console.log(HomePage)  //Catching the h6 --> Deals
  HomePage.onclick = ()=>{
    window.location.href ="./deals.html"
  }
+
+//Go to SignIn page
+
+let SignIn = document.querySelector("#navRightCorner");
+console.log(SignIn)  //Catching the h6 --> Deals
+SignIn.onclick = ()=>{
+   window.location.href ="./login.html"
+ }
+
+// Appending the User name
+let UserName = document.querySelector("#navRightCorner");
+ let name = localStorage.getItem("UserName");
+ UserName.innerHTML = `Hello ${name}`;
+ UserName.style.color = "red";
+
+
+//Code for Storing username from login.js
+
+//     let real_profile_data= await res.json();
+//     console.log('real_profile_data:', real_profile_data);
+//     localStorage.setItem("UserName",(real_profile_data.name));
