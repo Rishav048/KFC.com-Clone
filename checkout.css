@@ -1,0 +1,637 @@
+*{
+    margin: 0px;
+    font-family: serif;
+}
+
+
+
+#checkout-nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f2ef;
+}
+
+#checkout-nav button{
+    width: 158px;
+    height: 44px;
+    font-family: National 2 Regular;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #202124;
+    background-color: #f5f2ef;
+    border-radius: 200px;
+    font-weight: 600;
+    border-color: rgb(124, 124, 124);
+}
+
+#checkout-nav button:hover{
+    background-color: #202124;
+    color: #ffffff;
+}
+
+#openimg{
+    height: 70px;
+    width: 80px;
+}
+
+#checkout-nav div{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#last-div{
+    width: 260px;
+    height: 24px;
+}
+
+#last-div h3{
+font-size: 24px;
+line-height: 22px;
+color: #202124;
+}
+
+    /* body */
+
+#big{
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    
+}
+
+#big div{
+    width: 569px;
+    
+}
+
+#CS{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#CS h3{
+    font-size: 32px;
+    line-height: 57.6px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#CS img{
+    height: 20px;
+    margin-top: 10px;
+}
+
+#CS h4{
+    font-size: 26px;
+    line-height: 24px;
+
+}
+#addaddress{
+    display: flex;
+    height: 246px;  
+    background-color: #f8f7f5;
+    margin-top: 30px;
+}
+
+#addaddress h2{
+    width: 300px;
+    margin-left: 0px;
+margin-top: 30px;
+margin-left: 50px;
+font-size: 28px;
+}
+
+#addaddress a{
+    margin-top: 30px;
+    margin-right: 20px;
+    color: #202124;
+}
+
+#Dine{
+    display: flex;
+    background-color: #f8f7f5;
+    width: 469px;
+    margin-top: 10px;
+    height: 174px;
+    align-items: center;
+   
+}
+
+#Dine h2{
+width: 149px;
+font-size: 28px;
+line-height: 38.4px;
+letter-spacing: 0.5px;
+color:#202124;
+margin-left: 50px;
+}
+
+#Dine div p{
+    font-size: 18px;
+    margin-left: 100px;
+}
+
+
+#contact{
+    height: 469px;
+    background-color:#f8f7f5;
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+#contact h2{
+    font-size: 28px;
+    width: 149px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#con{
+    margin-left: 30px;
+}
+
+#con p{
+    font-size: 12px;
+    line-height: 22px;
+    
+}
+
+#con p:nth-child(1){
+    margin-top: 78px;
+    
+}
+
+#con p:nth-child(4){
+    margin-top: 15px;
+    
+}
+#con p:nth-child(7){
+    margin-top: 15px;
+    
+}
+#con div{
+    display: flex;
+    margin-top: 20px;
+}
+
+#con div p{
+    font-size: 16px;
+    width: 310px;
+    margin-left: 10px;
+    line-height: 28px;
+}
+
+#con h3{
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#con hr{
+    width: 320px;
+}
+
+
+
+
+
+
+
+
+.pay{
+background-color: #f8f7f5;
+width: 469px;
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.pay h2{
+margin-left: 50px;
+font-size: 32px;
+margin-top: 30px;
+}
+
+.pay a{
+    margin-top: 30px;
+    margin-right: 100px;
+}
+/*             change order              */
+
+.popup{
+   background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; 
+}
+
+.popup-content{
+    height: 485px;
+    width: 617px;
+    background-color: #f8f7f5;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup-content div{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+h2{
+    font-family: sans-serif;
+    margin-left: 90px;
+    font-size: 18px;
+}
+.remove{
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: #f8f7f5;
+}
+
+h1{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #202124;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#pikup{
+    margin-top: 30px;
+    border: none;
+    font-size: 18px;
+    margin-left: 40px;
+    background-color: #f8f7f5;
+}
+
+
+
+.hrrr{
+    margin-left: 40px; 
+    margin-right: 40px; 
+}
+
+#address{
+    width: 533px;
+    border: none;
+margin-top: 30px;
+font-size: 18px;
+margin-left: 40px;
+background-color: #f8f7f5;
+}
+
+#address:hover{
+    border: none;
+}
+
+
+label{
+    font-size: 18px;
+    margin-left: 40px;
+    display: block;
+    margin-top: 50px;
+}
+
+#date{
+    border: none;
+    font-size: 20px;
+    background-color: #f8f7f5;
+}
+
+#time{
+    border: none;
+    font-size: 20px;
+    background-color: #f8f7f5;
+}
+
+.btn{
+    width: 131px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 360px;
+    background-color: black;
+    color: #fff;
+    margin-left: 40%;
+    margin-top: 60px;
+}
+
+#c h3{
+margin-top: 15px;
+    width: 250px;
+    height: 100px;
+}
+
+#c  div{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#methode{
+    height: 590px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+#methode  #naaaav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+#methode li{
+    width: 80%;
+    height: 60px;
+   list-style: none;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#methode li input{
+    margin-left: 20px;
+}
+
+h3{
+margin-left: 10px;
+}
+
+#PayRemove{
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/*               second div          */
+
+#second{
+    width: 306px;
+    height: 205px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 150px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#second h2{
+margin-left: 0px;
+}
+
+#second div:nth-child(2){
+    margin-top: 20px;
+}
+
+#second div{
+    margin-top: 10px;
+}
+
+#second hr{
+    margin-top: 10px;
+}
+
+#second button{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 360px;
+    border: none;
+   
+
+}
+ 
+#second  div{
+    width: 300px;
+    display: flex ;
+    justify-content: space-between;
+}
+
+
+
+ button > p{
+    font-size: 14px;
+    color: rgb(154, 155, 156);
+}
+
+#up{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#up #upi-option{
+    background-color: #fff;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+#up #upi-option input{
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 30px;
+    width: 80%;
+display: block;
+border: none;
+}
+
+#up #upi-option button{
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 360px;
+    background-color: black;
+    color: #fff;
+    margin-left: 150px;
+}
+
+#up #upi-option hr{
+    margin-left: 40px;
+    margin-right: 35px;
+}
+
+
+#Pay-option{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #f8f7f5;
+    border: none;
+    font-size: 20px;
+    margin-right: 100px;
+}
+
+
+/*  upi pay card */
+
+#upipay{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#uppay{
+    background-color: #fff;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    
+}
+
+#uppay input{
+    display: block;
+    margin-top: 50px;
+    height: 30px;
+    margin-left: 20px;
+width: 80%;
+border: none;
+}
+#uppay hr{
+    width: 80%;
+    margin-left: 23px;
+}
+#uppay button{
+    margin-top: 30px;
+    width: 100px;
+    height: 33px;
+    background-color: #202124;
+    color: #fff;
+    border-radius: 360px;
+    margin-left: 100px;
+}
+
+/* credit pay css */
+
+#creditpay{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#crepay{
+    background-color: #fff;
+    height: 270px;
+    width: 260px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#crepay input:nth-child(1){
+    display: block;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: none;
+width: 80%;
+}
+
+#crepay input:nth-child(3){
+    display: block;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: none;
+width: 80%;
+}
+
+#crepay input:nth-child(5){
+    display: block;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: none;
+width: 40%;
+}
+
+#crepay hr{
+    width: 80%;
+    margin-left: 30px;
+}
+
+#crepay button{
+    margin-top: 30px;
+    width: 100px;
+    height: 33px;
+    background-color: #202124;
+    color: #fff;
+    border-radius: 360px;
+    margin-left: 80px;
+}
+
+
+
+#card:hover{
+background-color: #e4002b;
+
+}
+
+.co:hover{
+    color: #fff;
+    
+    }
+
+    #openneed{
+        color: #202124;
+        text-decoration: none;
+    }

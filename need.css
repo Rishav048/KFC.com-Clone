@@ -1,0 +1,87 @@
+*{
+font-family: sans-serif;
+margin: 0px;
+}
+
+#img{
+    height: 300px;
+    width: 100%;
+}
+
+#img #i{
+    height: 100%;
+    width: 100%;
+}
+
+#how{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 85px;
+}
+
+#three{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#three div{
+    width: 240px;
+}
+
+#three div p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+#but{
+    width: 150px;
+    height: 40px;
+    border-radius: 360px;
+    margin-top: 20px;
+}
+
+#but img{
+margin-right: 7px;
+}
+
+
+#last{
+    width: 90%;
+    height: 256px;
+    background-color: #f8f7f5;
+    margin: auto;
+    border: 1px solid #f8f7f5;
+    border-radius: 10px;
+    margin-top: 85px;
+}
+
+#last h4{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+#last button:nth-child(2){
+    margin-left: 100px;
+}
+#last button{
+    padding: 10px 15px 10px 15px;
+    margin-left: 10px;
+    border-radius: 360px;
+    border: 1px solid #cac9c7;
+    background-color: #f8f7f5;
+}
+
+#last div button{
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 170px;
+    height: 40px;
+    border: 1px solid #333332;
+}
