@@ -103,4 +103,7 @@ html{
 #natOffers{
     margin-top: 20px;
     margin-left: 15%;
+    font-family: "National 2 Condensed";
+    font-weight: 700;
+    font-size: 26px;
 }
