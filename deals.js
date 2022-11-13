@@ -86,6 +86,7 @@ const redeemCode=()=>{
     window.location.href="./cart.html"
 }
 
+let dealsDivA=document.getElementById("dealsDivA")
 
 let veiwDealsData=document.getElementById("veiwDealsData");
 veiwDealsData.style.display="none";
@@ -93,6 +94,8 @@ const viewDetails=(data)=>{
     veiwDealsData.innerHTML=null;
     //  console.log("in details")
     let div=document.createElement("div");
+    div.setAttribute("class","dealsAnji");
+    // div.style.backgroundColor="grey";
 
     let v_image=document.createElement("img");
     v_image.src=data.image;
@@ -105,8 +108,52 @@ const viewDetails=(data)=>{
     let v_description=document.createElement("p");
     v_description.innerText=data.description;
 
+    window.scrollTo(0,0);
+
     div.append(v_image,v_name,v_description);
     veiwDealsData.append(div);
     veiwDealsData.style.display="block";
+    veiwDealsData.style.marginBottom="-290px"
+    dealsDivA.style.visibility="hidden"
+
 
 }
+
+
+let dealsAnji=document.querySelector("#veiwDealsData");
+dealsAnji.addEventListener("click",()=>{
+    dealsDivA.style.visibility="visible"
+    veiwDealsData.style.display="none";
+})
+
+
+
+
+// Showing total price
+
+const wallet=document.getElementById("wallet");
+
+const cartdata = async()=>{
+
+    try {
+        let res= await fetch (`http://localhost:3000/cart`) ;
+        let data= await res.json();
+        console.log("cartdata",data);
+        //For showing the amount;
+        let amount = 0;
+        for(let i=0; i<data.length; i++){
+           
+           amount += (+data[i].price);
+        }
+  
+        //The total amount of cart is here now append it where you want;
+        console.log(amount);
+        wallet.innerHTML = amount; 
+  
+    } catch (error) {
+  
+        console.log(error);
+    }
+  
+  }
+  cartdata();

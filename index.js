@@ -182,3 +182,32 @@ let gotoDealsPage=document.querySelector("#menuBtn+h6");
 gotoDealsPage.addEventListener("click",()=>{
     window.location.href="./deals.html"
 })
+
+// Showing total price
+
+const wallet=document.getElementById("wallet");
+
+const cartdata = async()=>{
+
+    try {
+        let res= await fetch (`http://localhost:3000/cart`) ;
+        let data= await res.json();
+        console.log("cartdata",data);
+        //For showing the amount;
+        let amount = 0;
+        for(let i=0; i<data.length; i++){
+           
+           amount += (+data[i].price);
+        }
+  
+        //The total amount of cart is here now append it where you want;
+        console.log(amount);
+        wallet.innerHTML = amount; 
+  
+    } catch (error) {
+  
+        console.log(error);
+    }
+  
+  }
+  cartdata();

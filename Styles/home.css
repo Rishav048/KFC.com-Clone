@@ -170,9 +170,10 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
 
 #dealsCard .btnsDiv{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 3%;
     align-items: center;
+
 }
 
 #dealsCard .btnsDiv>button{
