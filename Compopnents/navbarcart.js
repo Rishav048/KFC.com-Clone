@@ -5,7 +5,7 @@ function navbar (){
     <div class="navLeft" >
         <a href="./index.html"><img class="logo" src="https://i.ibb.co/kmCj5FV/KINGS-FRIED-CHICKEN-2.png" alt="logo"></a>
         <h6 id="menuBtn">Menu</h6>
-        <h6>Deals</h6>
+        <h6 id="deals">Deals</h6>
     </div>
 
     <div class="navRight">
