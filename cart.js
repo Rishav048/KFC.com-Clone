@@ -318,3 +318,11 @@ let UserName = document.querySelector("#navRightCorner");
 let name = localStorage.getItem("UserName");
 UserName.innerHTML = `Hello ${name}`;
 UserName.style.color = "red";
+
+
+
+let check_out =document.getElementById("checkout");
+check_out.onclick=()=>{
+    window.location.href="./checkout.html";
+
+}
