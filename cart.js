@@ -1,7 +1,18 @@
-import {navbar} from "./Compopnents/navbar.js";
+import {navbar} from "./Compopnents/navbarcart.js";
 
 let nav=document.getElementById("navbar");
 nav.innerHTML = navbar();
+
+import {footer} from "./Compopnents/footer.js";
+
+let foot=document.getElementById("footer");
+foot.innerHTML = footer();
+
+
+
+// let popular_add_on=getElementById("popular_add_on");
+// let empty_cart=getElementById("emptycart");
+// let lovethese=getElementById("lovethese");
 
 
 
@@ -28,15 +39,16 @@ const append_items = (data)=>{
     
     // if(data.length==0)
     // {
-    //     let container=getElementById("container")
-    //     container.style.display="none"
-    //     let popular_add_on=getElementById("popular_add_on")
+       
+        
+        
     //     popular_add_on.style.display="none";
-    //     let empty_cart=getElementById("emptycart")
+        
     //     empty_cart.style.display="block";
-    //     let lovethese=getElementById("lovethese")
-    //     lovethese.style.display="block"
-    // };
+        
+    //     lovethese.style.display="block";
+    // }
+    
     let box_item=document.getElementById("box_item");
     box_item.innerHTML=null;
     let count=1;

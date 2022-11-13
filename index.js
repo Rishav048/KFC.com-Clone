@@ -22,13 +22,6 @@ menuBtn.addEventListener("click",()=>{
     window.location.href="./product.html"
 })
 
-// Cart page button
-let cartBtn=document.getElementById("cartBtn")
-cartBtn.addEventListener("click",()=>{
-    window.location.href="./cart.html";
-})
-
-
 
 // Carousel using TimeOut
 
@@ -150,9 +143,9 @@ const appendData = (data) =>{
      let btnsDiv=document.createElement("div");
      btnsDiv.setAttribute("class","btnsDiv")
 
-     let viewBtn=document.createElement("p");
-     viewBtn.innerText="View Details";
-     viewBtn.style.textDecoration="underline"
+    //  let viewBtn=document.createElement("p");
+    //  viewBtn.innerText="View Details";
+    //  viewBtn.style.textDecoration="underline"
 
      let redeemBtn=document.createElement("button");
      redeemBtn.innerText="Redeem";
@@ -162,7 +155,7 @@ const appendData = (data) =>{
 
      });
 
-     btnsDiv.append(viewBtn,redeemBtn);
+     btnsDiv.append(redeemBtn);
 
      card.append(image,name,descriprtion,btnsDiv);
      dealsCard.append(card);
@@ -173,3 +166,19 @@ const appendData = (data) =>{
 const redeemCode=()=>{
     window.location.href="./deals.html"
 }
+
+
+let cartBucket=document.querySelector(".navRight img");
+cartBucket.addEventListener("click",()=>{
+    window.location.href="./cart.html"
+})
+
+let navRightCorner=document.getElementById("navRightCorner");
+navRightCorner.addEventListener("click",()=>{
+    window.location.href="./login.html"
+})
+
+let gotoDealsPage=document.querySelector("#menuBtn+h6");
+gotoDealsPage.addEventListener("click",()=>{
+    window.location.href="./deals.html"
+})

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
 
-    <link rel="stylesheet" href="/product.css">
-    <link rel="stylesheet" href="/Styles/navbar.css">
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     
@@ -46,9 +47,14 @@
                 <i class="fa-solid fa-magnifying-glass" id="tap"></i>
                 <input type="text" placeholder="Search our menu" id="search">
             </div>
-            <button id="acc">Sort Low to high</button>
-            <button id="dec">Sort High to low</button>
-            <div id="ContItems">0</div>
+            <div id="buttonDiv">
+                <button class="sort_buttons" id="acc">Sort Low to high</button>
+                <button class="sort_buttons" id="dec">Sort High to low</button>
+                <h2>Items - : </h2>
+                <div id="ContItems">0</div>
+            </div>
+            
+            
         
             <hr id="line">
             <div class="adjustDiv" id="one"></div>
@@ -85,4 +91,4 @@
     
 </body>
 </html>
-<script type="module" src="/product.js"></script>
+<script type="module" src="./product.js"></script>
