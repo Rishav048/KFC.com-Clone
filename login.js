@@ -113,3 +113,13 @@ const getUserProfile = async(username,token) => {
 }; 
 
 //getElementByClassName returns an array ! 
+const adminlogin = () => {
+    event.preventDefault();
+    
+    let admin_username = document.getElementById("admin_username").value;
+    let admin_password = document.getElementById("admin_password").value;
+    if(admin_username==="admin" && admin_password==="admin"){
+        alert(`Secure Login-Welcome Admin`);
+        window.location.href="./admin.html";
+    }
+}
