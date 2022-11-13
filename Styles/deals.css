@@ -101,9 +101,22 @@ html{
 
 
 #natOffers{
-    margin-top: 20px;
-    margin-left: 15%;
     font-family: "National 2 Condensed";
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 15%;
+    
+}
+
+
+@media all and (min-width:520px) and (max-width:890px){
+    #dealsDivA{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (min-width:350px) and (max-width:520px){
+    #dealsDivA{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

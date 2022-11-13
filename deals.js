@@ -157,3 +157,31 @@ const cartdata = async()=>{
   
   }
   cartdata();
+
+
+//   Redirecting to cart page
+
+let cartBucket=document.querySelector(".navRight img");
+cartBucket.addEventListener("click",()=>{
+    window.location.href="./cart.html"
+})
+
+//   Redirecting to login page
+
+let navRightCorner=document.getElementById("navRightCorner");
+navRightCorner.addEventListener("click",()=>{
+    window.location.href="./login.html"
+})
+
+
+// Deals Page
+let gotoDealsPage=document.querySelector("#menuBtn+h6");
+gotoDealsPage.addEventListener("click",()=>{
+    window.location.href="./deals.html"
+})
+
+// Product Page
+let goToProducts=document.querySelector("#menuBtn");
+goToProducts.addEventListener("click",()=>{
+    window.location.href="./product.html"
+})
