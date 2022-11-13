@@ -78,6 +78,7 @@ const login = async() => {
           
             alert(`Login Successful,Welcome to Kings Fried Chicken`);    
         }
+        window.location.href="./index.html";
            
         
     }
@@ -106,4 +107,9 @@ const getUserProfile = async(username,token) => {
 
     let real_profile_data= await res.json();
     console.log('real_profile_data:', real_profile_data)
+    
+    localStorage.setItem("UserName",(real_profile_data.name));
+
 }; 
+
+//getElementByClassName returns an array ! 
