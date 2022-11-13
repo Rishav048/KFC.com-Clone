@@ -46,6 +46,9 @@ const appendData = (data) =>{
      image.setAttribute("class","dealsImage");
      image.src = el.image;
 
+     let cardDiv2 = document.createElement("div");
+     cardDiv2.setAttribute("class","cardDiv2")
+
      let name = document.createElement("h4");
      name.setAttribute("class","nameDeals")
      name.innerHTML = el.name;
@@ -75,7 +78,8 @@ const appendData = (data) =>{
      });
 
      btnsDiv.append(viewBtn,redeemBtn);
-     card.append(image,name,descriprtion,btnsDiv);
+     cardDiv2.append(name,descriprtion)
+     card.append(image,cardDiv2,btnsDiv);
      dealsCard.append(card);
 
     });
