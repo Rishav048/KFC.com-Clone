@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Checkout</title>
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+    <div id="checkout-nav">
+        <button id="back-to-Cart">Back to Cart</button>
+        <img id="openimg" src="https://i.ibb.co/kmCj5FV/KINGS-FRIED-CHICKEN-2.png" alt="Logo">
+        <div id="last-div">
+            <h3><img src="https://online.kfc.co.in/help" alt=""><a id="openneed" href="./needhelp.html">Need Help?</a></h3>
+            <h3><img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt=""> Account</h3>
+        </div>
+            </div>
+            <hr>
+            <div id="big">
+                <div> 
+                    <img style="margin-left: 15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==" alt="">
+                
+                    <div id="CS">
+                        <h3>CHECKOUT</h3>
+                        <h4><img src="https://online.kfc.co.in/static/media/Lock.e846db0a.svg" alt=""> Secure Checkout</h4>
+                    </div>
+
+                      <div id="addaddress"> 
+                        <h2>DINE IN INFO</h2>
+                        <div id="c">
+                            <img src="https://online.kfc.co.in/static/media/LocationOn.f57c1dfd.svg" alt="">
+                        
+                        </div>
+                        
+                        <a href="#" class="button" id="button">Change</a></div>
+                       
+
+                        <div id="Dine">
+                            <h2>DINE IN OPTIONS</h2>
+                            <div> <p>Walk-In the Store</p></div>
+                           </div>
+
+                           <div id="contact">
+                            <h2>CONTACT INFO</h2>
+                            <div id="con">
+                                <p>Full Name*</p>
+                                <h3 id="h3name">alex</h3>
+                                <hr>
+                                <p>Phone Number*</p>
+                                <h3 id="h3ohone">7385737547</h3>
+                                <hr>
+                                <p>Email*</p>
+                                <h3 id="h3email">baliramtamke143@gmai.com</h3>
+                                 <hr>
+                               <div id="check"><input type="checkbox"><p>I want to know about the cool stuff at KFC on Email & SMS (I know I can unsubscribe anytime).</p></div> 
+                            </div>
+                           </div>
+
+                           <div class="pay">
+                            <h2>PAYMENT</h2>
+                            
+                            <select name="payment" id="Pay-option">
+                                <option value="Pay option">Pay Option</option>
+                                <option value="UPI">UPI</option>
+                                <option value="Credit_Card">Credit Card</option>
+                               <option value="Net_Banking">Net Banking</option>
+                                <option value="Debit_Card">Debit Card</option>
+                                <option value="Pay On Delivery">Pay On Delivery</option>
+                                <option value="Cash">Cash</option>
+                            </select>
+                            
+                           </div>
+                   </div>
+                   
+                
+                
+                <div id="second" style=" width: 306px;
+                height: 205px;">
+                    <h2>1 ITEM</h2>
+                    <div><p>Subtotal</p><p id="subtotal"><span>₹</span></p></div>
+                    <div><p>GST</p><p id="gst"><span>₹</span></p></div>
+                    <div><p>Add Hope</p><p id="add-hope"><span>₹</span>5</p></div>
+                    <hr>
+                    <button onclick="cart" id="card"><p class="co">Continue to Payment <span class="co">₹<span id="total"></span></span></p></button>
+                </div>
+
+            </div>
+            
+
+
+
+          <!-- this is popup data -->
+
+
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <div>
+                        <h2 style="font-size: 30px;">CHANGE YOUR ORDER</h2>
+                <div class="remove" id="remove"><img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt=""></div>
+                    </div>
+                    
+                <hr>
+
+                 <h1>ORDER TYPE</h1> 
+                <select name="Food" id="pikup">
+                    <option value="Deliwery">Delivery</option>
+                    <option value="pickup">Pick up</option>
+                    <option value="Dine in">Dine in</option>
+                  </select>
+                  <hr class="hrrr">
+                  <h1>YOUR KFC RESTAURANT</h1>
+                    <input type="text" id="address" placeholder="Address">
+                    <hr class="hrrr">
+                   
+                    <H1>SCHEDULE FOR YOUR ORDER</H1>
+                    <div>
+                        <div> <label for="Date">Date-
+                            <select name="date" id="date">
+                                <option value="Today">Today</option>
+                                <option value="Tomarrow">Tomorrow</option>
+                            </select></div>
+                        <div> </label>
+                            <label for="Time">Time- 
+                                 <input type="time" id="time">
+                            </label></div>
+                    </div>
+                </select>
+                <button onclick="confirm()" class="btn" id="b">Confirm</button>
+                </div>
+             
+            </div>
+
+    <div id="upipay">
+     <div id="uppay">
+        <input type="text" name="" id="u" placeholder="UPI ID">
+        <hr>
+        <button id="paybutt">Pay</button>
+     </div>
+    </div>
+           
+    
+
+    <div id="creditpay">
+    <div id="crepay">
+        <input type="number" name="" id="cnum" placeholder="Card Number">
+        <hr>
+        <input type="text" placeholder="Name">
+        <hr>
+       
+     <input type="number" placeholder="Date">
+     <hr>
+         <button id="credpay">Pay</button>
+    </div>
+    </div>
+
+</body>
+</html>
+
+<script src="./checkout.js"></script>
