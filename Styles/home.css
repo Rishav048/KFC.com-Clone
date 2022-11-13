@@ -153,8 +153,8 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
 }
 
 #dealsCard{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     gap: 1%;
     margin-top: 20px;
     text-align: center;
@@ -186,4 +186,22 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
 #dealsCard .btnsDiv>button:hover{
     background-color: rgb(18, 18, 18);
     color: white;
+}
+
+.dealsName{
+    color: red;
+}
+
+
+/* Page Responsive ness of deals Cards */
+
+@media all and (min-width:570px) and (max-width:990px){
+    #dealsCard{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media all and (min-width:350px) and (max-width:570px){
+    #dealsCard{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

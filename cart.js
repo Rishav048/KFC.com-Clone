@@ -9,10 +9,10 @@ let foot=document.getElementById("footer");
 foot.innerHTML = footer();
 
 
-
-// let popular_add_on=getElementById("popular_add_on");
-// let empty_cart=getElementById("emptycart");
-// let lovethese=getElementById("lovethese");
+let container = document.getElementById("container");
+let popular_add_on=document.getElementById("popular_add_on");
+let empty_cart=document.getElementById("emptycart");
+let lovethese=document.getElementById("lovethese");
 
 
 
@@ -37,17 +37,17 @@ cart();
 const append_items = (data)=>{
 
     
-    // if(data.length==0)
-    // {
+    if(data.length==0)
+    {
        
+        container.style.display="none";
         
+        popular_add_on.style.display="none";
         
-    //     popular_add_on.style.display="none";
+        empty_cart.style.display="block";
         
-    //     empty_cart.style.display="block";
-        
-    //     lovethese.style.display="block";
-    // }
+        lovethese.style.display="block";
+    }
     
     let box_item=document.getElementById("box_item");
     box_item.innerHTML=null;
@@ -96,6 +96,8 @@ const append_items = (data)=>{
             gst.innerText= GST;
             checkout.innerText= subtotal+GST+lcb+hope;
             wallet.innerText=subtotal;
+            localStorage.setItem("sub_total",subtotal);
+            localStorage.setItem("gst",GST);
         }
         let h3=document.createElement("h3");
         h3.innerText=count;
@@ -113,7 +115,8 @@ const append_items = (data)=>{
             gst.innerText= GST;
             wallet.innerText=subtotal;
            checkout.innerText= subtotal+GST+lcb+hope;
-
+           localStorage.setItem("sub_total",subtotal);
+           localStorage.setItem("gst",GST);
         }
         let p =document.createElement("p");
         p.innerText= "₹"+el.price;
@@ -154,6 +157,8 @@ const append_items = (data)=>{
    gst.innerText= GST;
    
    checkout.innerText= subtotal+GST+lcb+hope;
+   localStorage.setItem("sub_total",subtotal);
+            localStorage.setItem("gst",GST);
 }
 
 
