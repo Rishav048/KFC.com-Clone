@@ -207,3 +207,10 @@ const cartdata = async()=>{
   
   }
   cartdata();
+
+
+// Appending the User name
+let UserName = document.querySelector("#navRightCorner");
+let name = localStorage.getItem("UserName");
+UserName.innerHTML = `Hello ${name}`;
+UserName.style.color = "red";
