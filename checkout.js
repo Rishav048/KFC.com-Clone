@@ -190,15 +190,17 @@ function last(){
 
     let sub=JSON.parse(localStorage.getItem("sub_total"))
 
-    document.getElementById("subtotal").append(sub);
+    console.log(sub)
+    
+    document.getElementById("subtotal").innerHTML=sub;
 
     let gst=JSON.parse(localStorage.getItem("gst"))
 
-     document.getElementById("gst").append(gst);
+     document.getElementById("gst").innerHTML=gst;
 
      let sum=sub+gst+5;
 
-     document.getElementById("total").append(sum);
+     document.getElementById("total").innerHTML=sum;
 
 }
 
