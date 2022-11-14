@@ -343,3 +343,18 @@ let deal =document.getElementById("deals");
 deal.onclick=()=>{
     window.location.href="./deals.html";
 }
+
+let startorder=document.getElementById("start_order");
+startorder.onclick=()=>{
+    window.location.href="./product.html";
+}
+
+let add_car=document.getElementsByClassName('add_to_cart');
+for(let i=0;i<add_car.length;i++)
+{
+    add_car[i].onclick=()=>{
+        window.location.href="./product.html";
+}
+
+
+}
