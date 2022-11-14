@@ -1,11 +1,25 @@
 {
   "name": "kfc_project",
   "version": "1.0.0",
-  "description": "",
   "main": "admin.js",
   "scripts": {
+    "start": "node admin.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishav048/-unique-stretch-3372.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Rishav048/-unique-stretch-3372/issues"
+  },
+  "homepage": "https://github.com/Rishav048/-unique-stretch-3372#readme",
+  "description": "",
+  "dependencies": {
+    "json": "^11.0.0",
+    "server": "^1.0.37"
+  }
 }
