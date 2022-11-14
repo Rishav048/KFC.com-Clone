@@ -150,3 +150,14 @@
   font-weight: bold;
   background-color: salmon;
 }
+#dbjson {
+  border: 1px solid black;
+  width: 190px;
+  font-weight: bold;
+  background-color: salmon;
+  text-decoration: none;
+  color: black;
+  height: 5px;
+  font-size: small;
+  margin-left: 20px;
+}
