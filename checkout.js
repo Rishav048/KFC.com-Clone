@@ -62,27 +62,27 @@ this.date=d;
 this.time=t;
 }
 
+document.getElementById("b").addEventListener("click" , bbbb)
 
-
-function confirm(){
+function bbbb(){
 
     let pikup=document.getElementById("pikup").value
 
-    document.getElementById("pikup").value=""
+    // document.getElementById("pikup").value=""
 
     let address=document.getElementById("address").value
-     address.style.width="30px"
+    //  address.style.width="30px"
 
-    document.getElementById("address").value=""
+    // document.getElementById("address").value=""
 
 
     let date=document.getElementById("date").value
 
-    document.getElementById("date").value=""
+    // document.getElementById("date").value=""
   
     let time=document.getElementById("time").value
 
-    document.getElementById("time").value=""
+    // document.getElementById("time").value=""
  
     let p1=new add(pikup,address,date,time);
     
