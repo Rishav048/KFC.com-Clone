@@ -1,4 +1,4 @@
-<h1 font-size="30px"> SkinCare is a clone of SkinStore.com </h1>
+<h1 font-size="30px"> Kings Fried Chicken is a clone of kfc.com </h1>
 <p>
  KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken..
 </p>
