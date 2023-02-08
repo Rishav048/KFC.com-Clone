@@ -1,21 +1,21 @@
 <h1 font-size="30px"> SkinCare is a clone of SkinStore.com </h1>
 <p>
- SkinCare is a clone of SkinStore.com which is a comprehensive online retail store built with the latest tech stacks. It offers a wide range of skincare and spa products and a seamless shopping experience for the customers. The project is well-designed and offers all the necessary functionality for an online retail store.
+ KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken..
 </p>
 
 <br/>
-<p>This was a collaborative project made by 3 members Executed in 5 days.</p>
+<p>This was a collaborative project made by 5 members Executed in 5 days.</p>
 
-- Abhinandan Kumar (Team Lead)
-- Prajwal HG
-- Shivam Chaudhary
-- Himanshu Sukla
-- Ahan Solanky
+- Rishav Chakraborty (Team Lead)
+- Trilochan Prasad
+- K Anjaneyulu
+- Vipin Kumar
+- Baliram Tamke
 <br/>
 
-Original website link: https://www.skinstore.com/
+Original website link: https://www.kfc.com/
 <br/>
-Link of our deployed project: https://heroic-gumdrop-b7fa02.netlify.app/ 
+Link of our deployed project:  https://elegant-lolly-ab23bc.netlify.app
 <br/>
 
 ## Tech Stack and Features
@@ -23,7 +23,6 @@ Link of our deployed project: https://heroic-gumdrop-b7fa02.netlify.app/
 - HTML5
 - CSS
 - JavaScript
-- Bootstrap
 
 
 ## Pages and features
@@ -32,35 +31,35 @@ Link of our deployed project: https://heroic-gumdrop-b7fa02.netlify.app/
 - Account Page:- User authentication using local storage.
 - Product Page:- It has sorting & filtering functionality.
 - Cart Page :- Dyanamic cart
+- Checkout Page
 
 
 ### Glimpse and screenshots of our cloned website:
 
 <h1>Home Page</h1>
 
-![Screenshot (396).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-08/Screenshot%20%28396%29_875853.png)
+![Screenshot (120).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-09/Screenshot%20%28120%29_466679.png)
 
 <br/>
 
 ###
 <h1>Product Page</h1>
 
-![Product Page](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-08/Screenshot%202023-02-08%20183507_733407.jpeg) 
+![Screenshot (121).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-09/Screenshot%20%28121%29_103151.png)
 
 <br/>
 
 ###
 <h1>Cart Page</h1>
 
-![Cart Page](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-08/Screenshot%202023-02-08%20182958_227304.jpeg)
+![Screenshot (122).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-09/Screenshot%20%28122%29_226190.png)
 
 <br/>
 
 ###
 <h1>Checkout Page</h1>
 
-![Checkout Page](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-08/Screenshot%202023-02-08%20183112_889111.jpeg)
-
+![Screenshot (123).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-02-09/Screenshot%20%28123%29_458071.png)
 
 
 
