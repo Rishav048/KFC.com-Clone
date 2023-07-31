@@ -15,7 +15,7 @@
 
 Original website link: https://www.kfc.com/
 <br/>
-Link of our deployed project:  https://elegant-lolly-ab23bc.netlify.app
+Link of our deployed project:  [https://kfc-app-delta.vercel.app](https://kfc-app-delta.vercel.app/)
 <br/>
 
 ## Tech Stack and Features
