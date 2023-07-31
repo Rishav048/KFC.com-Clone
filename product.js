@@ -40,7 +40,7 @@ for(let i=0; i<8; i++){      // This loop is to fetch the data one by one from d
 
 const getData = async (v) =>{
     try{
-        let response = await fetch(`http://localhost:3000/${valueINlink[i]}`)
+        let response = await fetch(`https://kfc-backend-app.onrender.com/${valueINlink[i]}`)
         let data = await response.json();                                    
       //  console.log(data)
       if(valueINlink[i] == "CHICKEN_BUCKETS"){
@@ -154,7 +154,7 @@ let priceupdate = document.getElementById("wallet");
 const cartdata = async()=>{
 
   try {
-      let res= await fetch (`http://localhost:3000/cart`) ;
+      let res= await fetch (`https://kfc-backend-app.onrender.com/cart`) ;
       let data= await res.json();
       console.log("cartdata",data);
       itemcount.innerHTML = (data.length);
@@ -200,7 +200,7 @@ const addToCart = async (el) =>{
     
 
    try{
-   let response  = await fetch(`http://localhost:3000/cart`,{
+   let response  = await fetch(`https://kfc-backend-app.onrender.com/cart`,{
     method:"POST",
     body:JSON.stringify(el),
     headers:{
@@ -225,7 +225,7 @@ const searchitems = async() =>{
   try{
     let value = document.getElementById("search").value;
   // console.log(value)
-  let res = await fetch(`http://localhost:3000/${valueINlink[i]}?q=${value}`);
+  let res = await fetch(`https://kfc-backend-app.onrender.com/${valueINlink[i]}?q=${value}`);
   let data = await res.json();
  
   console.log(data);
@@ -328,7 +328,7 @@ const sortingitems = async(value)=>{
   
   console.log(value)
   for(let i=0; i<8; i++){
-  let res = await fetch(`http://localhost:3000/${valueINlink[i]}?_sort=price&_order=${value}`);
+  let res = await fetch(`https://kfc-backend-app.onrender.com/${valueINlink[i]}?_sort=price&_order=${value}`);
    let data = await res.json();
    //console.log("data",data);
    for(let j=0; j<data.length; j++){

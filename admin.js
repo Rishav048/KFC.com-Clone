@@ -47,15 +47,7 @@ const addProducts = async() => {
  };
 
 
- let res= await fetch(`http://localhost:3000/BOX_MEALS`,{
-//   http://localhost:3000/CHICKEN_BUCKETS
-//   http://localhost:3000/NEW_LAUNCH
-//   http://localhost:3000/BIRYANI_BUCKETS
-//   http://localhost:3000/BOX_MEALS
-//   http://localhost:3000/BURGERS
-//   http://localhost:3000/SNACKS
-//   http://localhost:3000/STAY_HOME_SPECIALS
-//   http://localhost:3000/BEVERAGES
+ let res= await fetch(`https://kfc-backend-app.onrender.com/BOX_MEALS`,{
 //these are the 8 local url which needs to be used as required category wise. 
     method:"POST",
     body:JSON.stringify(send_this_data),
@@ -95,7 +87,7 @@ const updateProducts = async () => {
             description:u_description
     };
 
-    let res= await fetch(`http://localhost:3000/BEVERAGES/${u_id}`,{
+    let res= await fetch(`https://kfc-backend-app.onrender.com/BEVERAGES/${u_id}`,{
         method:`PATCH`,
         body:JSON.stringify(send_this_updated_data),
         headers:{
@@ -110,7 +102,7 @@ const updateProducts = async () => {
 const deleteProducts = async () => {
     let delete_products_id = document.getElementById("id_delete").value;
 
-    let res= await fetch(`http://localhost:3000/CHICKEN_BUCKETS/${delete_products_id}`,{
+    let res= await fetch(`https://kfc-backend-app.onrender.com/CHICKEN_BUCKETS/${delete_products_id}`,{
         method:`DELETE`,
         headers:{
             "content-type": 'application/json',

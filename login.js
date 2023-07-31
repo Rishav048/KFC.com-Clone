@@ -50,15 +50,15 @@ async function Register(event){
 //here we send login username and password to server , if correct it gives token and successful message, 
 //else it gives -inavlid login credentials
 
-const login = async() => {
+const login = async(event) => {
     event.preventDefault();
     let login_data ={
-        username: document.getElementById("login_username").value,
+        email: document.getElementById("login_username").value,
         password: document.getElementById("login_password").value,
     };
     console.log('login_data:', login_data);
 
-    let login_url=`https://masai-api-mocker.herokuapp.com/auth/login`;
+    let login_url=`https://expenses-app-tsr1.onrender.com/users`;
     try{
         let res=await fetch(login_url,{
             method:"POST",

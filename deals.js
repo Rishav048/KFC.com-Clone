@@ -17,7 +17,7 @@ footerDiv.innerHTML=footer();
 const dealsCard=document.getElementById("dealsDivA");
 const getData = async () =>{
     try{
-        let response = await fetch(`http://localhost:3000/DEALS`)
+        let response = await fetch(`https://kfc-backend-app.onrender.com/DEALS`)
         let data = await response.json();                                    
         console.log('data:', data)
 
@@ -140,7 +140,7 @@ const wallet=document.getElementById("wallet");
 const cartdata = async()=>{
 
     try {
-        let res= await fetch (`http://localhost:3000/cart`) ;
+        let res= await fetch (`https://kfc-backend-app.onrender.com/cart`) ;
         let data= await res.json();
         console.log("cartdata",data);
         //For showing the amount;

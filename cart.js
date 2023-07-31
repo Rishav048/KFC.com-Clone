@@ -24,7 +24,7 @@ add_hope.style.display="none";
 const cart = async()=>{
 
     try {
-        let res= await fetch (`http://localhost:3000/cart`) ;
+        let res= await fetch (`https://kfc-backend-app.onrender.com/cart`) ;
         let data= await res.json();
         console.log(data);
         append_items(data); 
@@ -81,7 +81,7 @@ const append_items = (data)=>{
         remove_btn.setAttribute("class","rem_btn");
         remove_btn.onclick=async()=>{
             try {
-                let res = await fetch (`http://localhost:3000/cart/${el.id}` ,{
+                let res = await fetch (`https://kfc-backend-app.onrender.com/cart/${el.id}` ,{
             
                     method:'DELETE',
                     
@@ -258,7 +258,7 @@ remove_all.onclick = async()=>{
 
 
     try {
-        let res = await fetch (`http://localhost:3000/cart`)
+        let res = await fetch (`https://kfc-backend-app.onrender.com/cart`)
     
             
               let data = await res.json();
@@ -291,7 +291,7 @@ console.log(arr_id);
 
     const remove_all_data =async(id)=>{
         try {
-            let res = await fetch (`http://localhost:3000/cart/${id}` ,{
+            let res = await fetch (`https://kfc-backend-app.onrender.com/cart/${id}` ,{
         
                 method:'DELETE',
                 
