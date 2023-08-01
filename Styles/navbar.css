@@ -1,3 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "National 2 Regular Condensed", Arial, sans-serif;
+  }
+  
+  #Navbar {
+    width: 100%;
+    padding: 10px;
+    background-color: #f6f3f0;
+    top: 0;
+    bottom: 0;
+    position: sticky;
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  #mainNav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 700px) {
+    #mainNav {
+      flex-direction: column;
+      font-size: 16px;
+    }
+  }
+  
+  #mainNav .navLeft {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 8%;
+    font-size: 25px;
+  }
+  
+  #mainNav .navRight {
+    display: flex;
+    width: 30%;
+    border: 0px solid red;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 4%;
+  }
+  
+  .navRight > img {
+    width: 20%;
+    max-width: 40px; /* Limit the width of the cart image */
+  }
+  
+  .logo {
+    width: 80%;
+    max-width: 100px;   /* Limit the width of the logo */
+    border-radius: 25px;
+  }
+  
+  #navRightCorner {
+    width: 35%;
+  }
+  
+  #startDiv {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    align-items: center;
+  }
+
+  h3+img{
+    width: 300px;
+    max-width: 100px;
+    height: 50px;
+  }
+  
+  #startDiv > .startBtn {
+    padding: 1%;
+    color: white;
+    background-color: #e4002b;
+    border-radius: 5%;
+    padding: 11px 40px;
+    border-radius: 200px;
+    height: 44px;
+    cursor: pointer;
+    margin-left: 2%;
+  }
+  
+  /* Additional styles for responsive navigation text size */
+  @media (max-width: 500px) {
+    #mainNav .navLeft,
+    #mainNav .navRight {
+      font-size: 14px;
+    }
+  }
+  
+  /* Additional styles for responsive navigation spacing */
+  @media (max-width: 350px) {
+    #mainNav .navLeft,
+    #mainNav .navRight {
+      gap: 4%;
+    }
+  }
+
 #fixed{
     font-family: "National 2 Regular Condensed";
     font-style: normal;
@@ -5,7 +117,7 @@
     font-size: 15px;
     height: 32px;
     display: flex;
-    padding:1% ;
+    padding:25px 0px;
     color: #202124;
     background-color: #f6f3f0;
     text-align: center;
@@ -21,85 +133,3 @@
     padding: 10px;
     border-radius: 20px;
   }
-  
-  #Navbar{
-      width:100%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      background-color: #f6f3f0;
-      top:0;
-      bottom: 0;
-      position: sticky;
-      z-index: 99;
-      cursor: pointer;
-  }
-  
-  #mainNav{
-      display: flex;
-      justify-content: space-between;
-      width:95%;
-      font-size: 18px;
-  }
-
-  @media all and (min-width:350px) and (max-width:700px){
-    #mainNav{
-        flex-direction: column;
-    }
-}
-  
-  #mainNav .navLeft{
-      display: flex;
-      margin-left: -8%;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      gap:8%;
-      font-size: 25px;
-  }
-  
-  #mainNav .navRight{
-      margin-right: -5%;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      gap:2%;
-  }
-  
-  .navRight>img{
-     width:20%;
-  }
-  
-  .logo{
-      width:35% ;
-      border-radius: 25px;
-      margin-right: -60%;
-  }
-  
-  #startDiv{
-      padding-top: 1%;
-      padding-bottom: 1%;
-      display: flex;
-      width:100%;
-      justify-content: center;
-      text-align: center;
-      background-color: black;
-      color: white;
-      align-items: center;
-  }
-  
-  #startDiv>.startBtn{
-      padding: 1%;
-      color: white;
-      background-color: #e4002b;
-      border-radius: 5%;
-      padding: 11px 40px;
-      border-radius: 200px;
-      height: 44px;
-      cursor: pointer;
-      margin-left: 2%;
-  }
-
-  #navRightCorner{
-    width:35%;
-}

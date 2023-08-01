@@ -1,42 +1,67 @@
-#footer{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "National 2 Regular", Arial, sans-serif;
+  }
+  
+  #footer {
     background-color: black;
     color: white;
     margin: auto;
     padding-top: 20px;
-}
-
-#footerDiv{
+  }
+  
+  #footerDiv {
     display: flex;
     color: white;
-    /* padding: 3%; */
     align-items: left;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to new line on small screens */
     gap: 4%;
-
-
-}
-
-#footerDiv h6{
+  }
+  
+  #footerDiv h6 {
     font-size: 15px;
-    font-family: "National 2 Regular";
     font-weight: 400;
     line-height: 22px;
-}
-
-#privacyPol{
+    margin: 0; /* Remove default margins for h6 elements */
+  }
+  
+  #privacyPol {
     display: flex;
     margin: auto;
     margin-top: 60px;
     padding-bottom: 10px;
     align-items: center;
     justify-content: center;
-    font-family: "National 2 Regular";
     font-weight: 400;
     line-height: 22px;
-    gap:5px;
-}
-
-#privacyPol p{
-  margin-right: 30%;
-  margin-left: 30%;
-}
+    gap: 5px;
+  }
+  
+  #privacyPol p {
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+  
+  /* Responsive CSS for 3 screens */
+  @media (max-width: 767px) {
+    #footerDiv {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    #footerDiv h6 {
+      font-size: 14px;
+    }
+  
+    #privacyPol {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #privacyPol p {
+      margin: 0;
+    }
+  }
+  
