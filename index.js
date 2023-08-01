@@ -128,7 +128,7 @@ goToCat.addEventListener("click",()=>{
 })
 
 
-let carosel=document.querySelector("#carosel");
+let carosel=document.querySelector(".carousel-track");
 carosel.addEventListener("click",()=>{
     window.location.href="./product.html"
 })
@@ -143,13 +143,7 @@ const getData = async () =>{
         let response = await fetch(`https://kfc-backend-app.onrender.com/DEALS`)
         let data = await response.json();                                    
         console.log('data:', data)
-
         appendData(data)
-    //   if(valueINlink[i] == "CHICKEN_BUCKETS"){
-    //     //console.log(data)
-    //     appendData(data,CHICKEN_BUCKETS)
-    //   }
-      
     }
     catch(error){
         console.log(error);
