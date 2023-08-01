@@ -15,11 +15,107 @@
     font-size: 22px;
 }
 
-#carosel img{
-    width:100%;
-    position: relative;
-    cursor: pointer;
+body {
+    margin: 0;
+    padding: 0;
 }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease; /* Slower transition for smoother sliding effect */
+  }
+  
+  .carousel-track img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for dot color change */
+  }
+  
+  .carousel-dot.active {
+    background-color: #333;
+  }
+  
+  /* Styles for navigation icons */
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .carousel-navigation div {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  .carousel-navigation .next {
+    margin-right: 16px;
+  }
+  
+  /* Responsive CSS for 3 screens */
+  @media (max-width: 767px) {
+    .carousel-track {
+      flex-wrap: nowrap;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel-track img {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-track {
+      flex-wrap: nowrap;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel-track img {
+      flex: 0 0 50%;
+      scroll-snap-align: start;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .carousel-track {
+      flex-wrap: nowrap;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel-track img {
+      flex: 0 0 33.33%;
+      scroll-snap-align: start;
+    }
+  }
+
 #menuimg{
     width:3%;
 }

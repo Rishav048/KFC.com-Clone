@@ -25,32 +25,69 @@ menuBtn.addEventListener("click",()=>{
 
 // Carousel using TimeOut
 
-let cDiv=document.getElementById("carosel_inner");
+const carouselContainer = document.querySelector(".carousel-container");
+const carouselTrack = document.querySelector(".carousel-track");
+const images = document.querySelectorAll(".carousel-track img");
+const dotsContainer = document.querySelector(".carousel-dots");
 
+let currentIndex = 0;
+let interval;
 
+function showImage(index) {
+  carouselTrack.style.transition = "transform 0.3s ease"; // Add a transition
+  carouselTrack.style.transform = `translateX(-${index * 100}%)`;
 
-let images=[`https://images.ctfassets.net/wtodlh47qxpt/4wzmNLWjqVZZl95Fcf48r2/90bd1294b970f903545d8f0f5278b28a/Allu_Arjun_Combo_Meal__1440x396px.jpg?w=1536&fit=fill&fm=webp`,`https://images.ctfassets.net/wtodlh47qxpt/7Epy9aFbpyR8YoHuGQF3sZ/01f22a322d491c24121cd4a05a15b45f/KFC_Maggi__Banner__1440x396px_149.jpg?w=1536&fit=fill&fm=webp`,`https://images.ctfassets.net/wtodlh47qxpt/4gztBB8yAvtp6jV7JAuLD/093fddbb77a78a44a4d3d5e066c592de/KFC_Peri_Peri_Banner__1440x396px.jpg?w=1536&fit=fill&fm=webp`,`https://images.ctfassets.net/wtodlh47qxpt/500GRYvL6xfLzNRY68rr4u/c66030e22aa477594939c55281fc00fd/variety_bucket_banner_1440x396px.jpg?w=1536&fit=fill&fm=webp`,`https://images.ctfassets.net/wtodlh47qxpt/2cKs5e17FbKIE7Dza5ZlNM/e7163ee02d91d59d81a20ecf606f707b/Biryani_Banner_1440x396px.jpg?w=1536&fit=fill&fm=webp`,`https://images.ctfassets.net/wtodlh47qxpt/4qo6xWTWQmjg8ycSRETMU5/649a454a732e77c4cc534524e48bd800/Box_Meals_App_Banner__1440x396px.jpg?w=1536&fit=fill&fm=webp`,`https://images.ctfassets.net/wtodlh47qxpt/4MiZL0wr9Z4ZOTjldWEshT/5ed50dce636025cd535b9344ae820d46/DIP_N_CRUNCH_BANNER_1440x396px.jpg?w=1536&fit=fill&fm=webp`]
+  // Update active dot
+  const dots = document.querySelectorAll(".carousel-dot");
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+}
 
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+}
 
-let image=document.createElement("img");
- 
-image.src=images[0]
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+}
 
-cDiv.append(image);
+function selectImage(index) {
+  currentIndex = index;
+  showImage(currentIndex);
+}
 
-let i=1;
+function createDots() {
+  for (let i = 0; i < images.length; i++) {
+    const dot = document.createElement("div");
+    dot.classList.add("carousel-dot");
+    dot.addEventListener("click", () => selectImage(i));
+    dotsContainer.appendChild(dot);
+  }
+}
 
-setInterval(function(){
+function startCarousel() {
+  interval = setInterval(nextImage, 2000);
+}
 
-    if(i==images.length){
-         i=0;
-    }
+function stopCarousel() {
+  clearInterval(interval);
+}
 
-    image.src=images[i];
-    cDiv.append(image);
+carouselContainer.addEventListener("mouseenter", stopCarousel);
+carouselContainer.addEventListener("mouseleave", startCarousel);
 
-    i++
-  },4000);
+// Reset transition after the transition is complete
+carouselTrack.addEventListener("transitionend", () => {
+  carouselTrack.style.transition = "none";
+  showImage(currentIndex);
+});
+
+createDots();
+showImage(currentIndex);
+startCarousel();
 
  
 //   Categories portion starts from here
